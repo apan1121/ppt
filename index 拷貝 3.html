@@ -1,0 +1,3009 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>GoLife : Byron Chen First Project</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="lib/css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <script type='text/template' id='bg_FrontCover'>
+        <div class='background'>
+            <div class='company_logo'>
+            </div>
+
+            <div class='deep_black_box'>
+                <div class='company_info'>
+                    <div class='company_name'>研鼎崧圖股份有限公司 GOYOURLIFE INC.</div>
+
+                    <div class='company_addr'>台北市114內湖區南京東路六段461號8樓<br>
+                        8F., No.461, Nanjing E. Rd., Neihu District, <br>
+                        Taipei City 114, Taiwan(R.O.C)<br>
+                        Tel +886-2-8792-1567   Fax +886-2-8792-1167<br>
+                    </div>
+                </div>
+            </div>
+            <div class='orng_bar'></div>
+        </div>
+    </script>
+
+    <script type='text/template' id='bg_Default'>
+        <div class='background'>
+            <div class='deep_black_box'>
+                <div class='campany_logo_text'></div>
+                <div class='campany_logo_small'></div>
+
+            </div>
+            <div class='orng_bar'></div>
+        </div>
+    </script>
+
+    <script type='text/template' id='Template_PageCenter'>
+        <div class='Template_PageCenter'>
+            <div>
+                <div>
+                    text
+                </div>
+            </div>
+        </div>
+    </div>
+    </script>
+
+    <script type='text/template' >
+        <div class='arrow'>
+            <div class='arrow-img'></div>
+        </div>
+
+    </script>
+
+    <body>
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <div class='ShowBox' data-bg-template='bg_FrontCover' showboxpage='FrontCover' data-state="FrontCover">
+
+                        <div class='PageContent'>
+                            <div class='ProjectTitle'>Language Manager</div>
+                            <div class='ProjectSubTitle'>Project Demo</div>
+
+                            <div class='ProjectReporter'>
+                                Report:<br>
+                                <b>Byron Chen</b>
+                            </div>
+
+
+                            <!-- <div class='Press_Space_Bar animated fadeIn'>
+                                <div class='Press_Space'>Press Space</div>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </section>
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast"  actionfunc='Page1'>
+                        <div class='ShowBox'>
+                            <div class='PageContent'>
+                                <div class='Title' >Learning</div>
+                                <div class='Content' >
+                                    <ul style='font-size:60px; line-height:100px;'>
+                                        <li class='autoStepShow'><img src='image/yii.png' width='60px'> Yii Framework </li>
+
+                                        <li class='autoStepShow'><img src='image/BackboneJS_logo.png' width='60px' > Backbone </li>
+
+                                        <li class='autoStepShow'><img src='image/requirejs.png' width='60px' > RequireJS </li>
+
+                                        <li class='autoStepShow'>Practice</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'><h2 class='autoTypeWriter'>Before learning...</h2></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'><h1 class='autoTypeWriter'>   M V C  </h1></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='MVC_Intro'>
+                            <div class='PageContent'>
+                                <div class='Title' >M V C</div>
+                                <div class='Content' >
+                                    <ul style='font-size:40px; line-height:100px;'>
+                                        <li class='fragment' data-fragment-index="0">
+                                            由 Trygve Reenskaug 提出
+                                        </li>
+                                        <li class='fragment' data-fragment-index="1">
+                                            Xerox PARC - Smalltalk (1978)
+                                        </li>
+                                        <li class='fragment' data-fragment-index="2">
+                                            易於維護、擴充、重複利用
+                                        </li>
+                                        <li class='fragment' data-fragment-index="3">
+                                            概念適用於各種平台的中、大型專案
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                                <div class='fragment current-visible PeoplePic' data-fragment-index="0">
+                                    <img src='image/Trygve_Reenskaug_(2010).jpg'>
+                                </div>
+                                <div  class='fragment current-visible PeopleSay' data-fragment-index="0">
+                                    &ldquo;MVC was conceived as a general solution to the problem of users controlling a large and complex data set.&rdquo;
+                                </div>
+                                <div class='fragment current-visible PARCPic' data-fragment-index="1">
+                                    <img src='image/220px-PARC_logo_color.svg.png'>
+                                </div>
+                                <div class='fragment current-visible MVC_Flow' data-fragment-index="2">
+                                    <img src='image/500px-MVC-Process.svg.png'>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='MVC_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' >M V C - Flow</div>
+
+                                <sharp class='Square MVC-Box fragment'  data-fragment-index="1">
+                                </sharp>
+
+                                <Sharp class='Cycle User fragment'  data-fragment-index="0">
+                                    User
+                                </Sharp>
+                                <Sharp class='Cycle Control fragment'  data-fragment-index="1">
+                                    Control
+                                </Sharp>
+                                <Sharp class='Cycle Model fragment'  data-fragment-index="1">
+                                    Model
+                                </Sharp>
+                                <Sharp class='Cycle View fragment'  data-fragment-index="1">
+                                    View
+                                </Sharp>
+
+                                <Sharp class='Cycle DB fragment current-visible' data-fragment-index="4">
+                                    DB
+                                </Sharp>
+                                <Sharp class='Cycle DB fragment current-visible' data-fragment-index="5">
+                                    DB
+                                </Sharp>
+
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-2' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-3' data-fragment-index="4">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-4' data-fragment-index="6">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-5' data-fragment-index="5">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-6' data-fragment-index="7">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment  arrow-7' data-fragment-index="8">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'><h2 class='autoTypeWriter'>  M V C 超棒的...</h2></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'><h2 class='autoTypeWriter'>  PHP的開發者也來MVC... </h2></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>2004 年  <br>  PHP MVC Framework   <br>  大量出現...</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>  2004 年...????  </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='PHP_Intro'>
+                            <div class='PageContent'>
+                                <div class='Title' >PHP Intro</div>
+                                <div class='Content' >
+                                     <ul style='font-size:30px; line-height:50px;'>
+                                        <li class='fragment' data-fragment-index="0">
+                                            由 Rasmus Lerdorf 在 1995 年開發的 <font color='blue'>P</font>ersonal <font color='blue'>H</font>ome <font color='blue'>P</font>age
+                                        </li>
+                                        <li class='fragment' data-fragment-index="1">
+                                            用 C 語言開發的 CGI 取代 Perl 的 Scripting Language
+                                        </li>
+                                        <li class='fragment' data-fragment-index="2">
+                                            從 C、Perl、Java、C++、Python 得到啟發
+                                        </li>
+                                        <li class='fragment' data-fragment-index="3">
+                                            1997 年改寫成 PHP 3，PHP: Hypertext Preprocessor
+                                        </li>
+                                        <li class='fragment' data-fragment-index="4">
+                                            PHP 3 加入 Object  <span class='fragment' data-fragment-index="5">≒  value types</span>
+                                        </li>
+                                        <li class='fragment' data-fragment-index="6">
+                                            2000 年改寫剖析器（ Zend 引擎 ），成為 PHP 4
+                                        </li>
+                                        <li class='fragment' data-fragment-index="7">
+                                            2004 年 PHP 5 : New Object Model <span class='fragment' data-fragment-index="8">-> 物件導向編程語言</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class='fragment current-visible PeoplePic' data-fragment-index="0">
+
+                                    <img src='image/Rasmus_Lerdorf_cropped.jpg' />
+                                </div>
+
+                                <div class='fragment current-visible PHP_Sample_Code' data-fragment-index="2">
+
+<pre><code class="php" data-trim contenteditable style="font-size: 18px;">
+&lt?php
+    print_r("Hello World");
+?&gt</code></pre>
+                                </div>
+
+                                <div class='fragment current-visible Perl_Sample_Code' data-fragment-index="2">
+
+<pre><code class="perl" data-trim contenteditable style="font-size: 18px;">
+#!/usr/bin/env perl
+print "Hello, world!\n";
+　
+</code></pre>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </section>>
+
+
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='PHP_Mater_Say'>
+                        <div class='PageContent'>
+                            <div class='fragment2 current-visible Say' data-fragment-index="0">
+                                    <sapn class='autoTypeWriter' data-typerwriterspeed='3'>&ldquo;I don’t know how to stop it, there was never any intent to write a programming language ... I have absolutely no idea how to write a programming language, I just kept adding the next logical step on the way.&rdquo;   </sapn>
+                            </div>
+
+                            <div class='PHP_Master'>
+                                <img src='image/Rasmus-Lerdorf.png' />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox'>
+                            <div class='PageContent'>
+                                <div class='Title' >PHP MVC</div>
+                                <div class='Content' >
+                                    <ul style='font-size:50px; line-height:55px;'>
+                                        <li class='autoStepShow'>
+                                            <img src='image/laravel.png' width='50px'>
+                                            Laravel ( 2011 ~ )</li>
+                                        <li class='autoStepShow'>
+                                            <img src='image/phalcon.png' width='50px'>
+                                            Phalcon ( 2012 ~ )</li>
+                                        <li class='autoStepShow'>
+                                            <img src='image/Symfony.png' width='50px'>
+                                            Symfony ( 2005 ~ )</li>
+                                        <li class='autoStepShow'>
+                                            <img src='image/yii.png' width='50px'>
+                                            Yii ( 2008 ~ )</li>
+                                        <li class='autoStepShow'>
+                                            <img src='image/ci.png' width='50px'>
+                                            CodeIgniter ( 2006 ~ )</li>
+                                        <li class='autoStepShow'>
+                                            <img src='image/cake-logo.png' width='50px'>
+                                            CakePHP ( 2005 ~ )</li>
+                                        <li class='autoStepShow'>...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='PHP_Sort'>
+                            <div class='PageContent'>
+                                <div class='SortPic' style='text-align:center;'>
+                                    2013 M V C<br>
+                                    <img src='image/chart1-1024x853.png'>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox'>
+                            <div class='PageContent'>
+                                <div class='Title' style='letter-spacing:5px;'>  Yii </div>
+                                <div class='Content' >
+                                    <ul style='font-size:50px; line-height:80px;'>
+                                        <li class='autoStepShow'>Control : 使用者操控頁面</li>
+                                        <li class='autoStepShow'>Model : 連接 DB 與簡化 SQL</li>
+                                        <li class='autoStepShow'>View : 樣板引擎</li>
+                                        <li class='autoStepShow'>Library : 方便且多樣的資源庫</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Yii_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' style='letter-spacing:5px;'>  Yii - Flow</div>
+
+
+                                <Sharp class='Cycle User'  data-fragment-index="0">
+                                    User
+                                </Sharp>
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                                <sharp class='Square Router fragment'  data-fragment-index="1">
+                                    index.php
+                                </sharp>
+
+                                <div class='arrow fragment current-visible arrow-2' data-fragment-index="4">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+
+
+
+                                <Sharp class='Cycle Control fragment fragment current-visible'  data-fragment-index="3">
+                                    Control 1
+                                </Sharp>
+
+                                <Sharp class='Cycle Control Control1 fragment current-visible'  data-fragment-index="3">
+                                    Control 2
+                                </Sharp>
+
+                                <Sharp class='Cycle Control Control1 hidden fragment current-visible' data-opacity='0.3'  data-fragment-index="4">
+                                    Control 2
+                                </Sharp>
+
+                                <Sharp class='Cycle Control Control2 fragment current-visible'  data-fragment-index="3">
+                                    Control 3
+                                </Sharp>
+
+                                <Sharp class='Cycle Control Control2 hidden fragment current-visible' data-opacity='0.3'  data-fragment-index="4">
+                                    Control 3
+                                </Sharp>
+
+
+                                <div class='arrow fragment current-visible arrow-3' data-fragment-index="6">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-4' data-fragment-index="6">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+
+                                <Sharp class='Cycle Model Model0 fragment current-visible'  data-fragment-index="5">
+                                    Model 1
+                                </Sharp>
+
+                                <Sharp class='Cycle Model Model0 fragment current-visible'  data-fragment-index="6">
+                                    Model 1
+                                </Sharp>
+
+                                <Sharp class='Cycle Model Model1 fragment current-visible'  data-fragment-index="5">
+                                    Model 2
+                                </Sharp>
+
+                                <Sharp class='Cycle Model Model1 fragment current-visible'  data-fragment-index="6">
+                                    Model 2
+                                </Sharp>
+
+                                <Sharp class='Cycle Model Model2 fragment current-visible'  data-fragment-index="5">
+                                    Model 3
+                                </Sharp>
+
+                                <Sharp class='Cycle Model Model2 fragment current-visible' data-opacity='0.3'  data-fragment-index="6">
+                                    Model 3
+                                </Sharp>
+
+                                <Sharp class='Cycle Model Model3 fragment current-visible'  data-fragment-index="5">
+                                    Model 4
+                                </Sharp>
+
+                                <Sharp class='Cycle Model Model3 fragment current-visible' data-opacity='0.3'  data-fragment-index="6">
+                                    Model 4
+                                </Sharp>
+
+
+
+                                <div class='arrow fragment current-visible arrow-5' data-fragment-index="8">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-6' data-fragment-index="8">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+
+
+                                <Sharp class='Cycle View View0 fragment current-visible'  data-fragment-index="7">
+                                    View 1
+                                </Sharp>
+
+                                <Sharp class='Cycle View View0 fragment current-visible'  data-fragment-index="8">
+                                    View 1
+                                </Sharp>
+
+                                <Sharp class='Cycle View View1 fragment current-visible'  data-fragment-index="7">
+                                    View 2
+                                </Sharp>
+
+                                <Sharp class='Cycle View View1 fragment current-visible'  data-fragment-index="8">
+                                    View 2
+                                </Sharp>
+
+                                <Sharp class='Cycle View View2 fragment current-visible'  data-fragment-index="7">
+                                    View 3
+                                </Sharp>
+
+                                <Sharp class='Cycle View View2 fragment current-visible' data-opacity='0.3'  data-fragment-index="8">
+                                    View 3
+                                </Sharp>
+
+                                <Sharp class='Cycle View View3 fragment current-visible'  data-fragment-index="7">
+                                    View 4
+                                </Sharp>
+
+                                <Sharp class='Cycle View View3 fragment current-visible' data-opacity='0.3'  data-fragment-index="8">
+                                    View 4
+                                </Sharp>
+
+                                <div class='arrow fragment current-visible arrow-7' data-fragment-index="9">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-8' data-fragment-index="10">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <Sharp class='Cycle Control fragment fragment current-visible'  data-fragment-index="4">
+                                    Control 1
+                                </Sharp>
+                                <Sharp class='Cycle Control fragment fragment current-visible'  data-fragment-index="5">
+                                    Control 1
+                                </Sharp>
+                                <Sharp class='Cycle Control fragment fragment current-visible'  data-fragment-index="6">
+                                    Control 1
+                                </Sharp>
+                                <Sharp class='Cycle Control fragment fragment current-visible'  data-fragment-index="7">
+                                    Control 1
+                                </Sharp>
+                                <Sharp class='Cycle Control fragment fragment current-visible'  data-fragment-index="8">
+                                    Control 1
+                                </Sharp>
+                                <Sharp class='Cycle Control fragment fragment current-visible'  data-fragment-index="9">
+                                    Control 1
+                                </Sharp>
+
+
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>  M V C <br>  讓 Server 端開發  <br>變得簡單又方便    </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>  什麼？？<br> Client 端不高興了？？   </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>  Client 端早就不像當年<br>秀秀畫面這麼簡單    </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='Title' > A J A X </div>
+                            <div class='Content' >
+                                 <ul style='font-size:30px; line-height:60px;'>
+                                    <li class='fragment' data-fragment-index="0">
+                                        <font color='blue'>A</font>synchronous <font color='blue'>J</font>avaScript <font color='blue'>a</font>nd <font color='blue'>X</font>ML
+                                    </li>
+                                    <li class='fragment' data-fragment-index="1">
+                                        1996 年 Microsoft Internet Explorer  提出 iFrame 標籤
+                                    </li>
+                                    <li class='fragment' data-fragment-index="2">
+                                        1999 年 Mozilla、Safari、Opera 開始使用 XMLHttpRequest
+                                    </li>
+                                    <li class='fragment' data-fragment-index="3">
+                                        2004 年 Google 大量使用標準化的XMLHttpRequest在各服務中
+                                    </li>
+                                    <li class='fragment' data-fragment-index="4">
+                                        2005 年 Jesse James Garrett  對於這技術，提出 AJAX 名詞概念<br>
+                                        <span class='fragment' data-fragment-index="5">Javascript、Document Object Model、XML 的混合應用</span>
+                                    </li>
+                                    <li class='fragment' data-fragment-index="6">
+                                        減少傳輸流量、增加單頁功能，網頁朝應用程式發展
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='Ajax_Manster_Say'>
+                        <div class='PageContent'>
+                            <div class='fragment2 current-visible Say' data-fragment-index="0">
+                                    <sapn class='autoTypeWriter' data-typerwriterspeed='5'>    &ldquo;Ajax: A New Approach to Web Applications&rdquo;       </sapn>
+                            </div>
+
+                            <div class='AJAX_Master'>
+                                <img src='image/Jesse-James-Garrett_Web2.0-Kongress_2007.png' />
+                            </div>
+
+                            <div class='Google_APP' data-opacity='0.5'>
+                                <img src='image/Google-apps-updated-Oct-29th.png' />
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='AJAX_Flow'>
+                        <div class='PageContent'>
+                            <div class='Title' style='letter-spacing:5px;'>  A J A X - Flow</div>
+
+                            <sharp class='Square Page'>
+                                Page
+
+                                <sharp class='Square Page-sub' >
+                                    天氣：陰 <br>( 2015 - 01 - 10)
+                                </sharp>
+                                <sharp class='Square Page-sub Page-sub-cover fragment'  data-fragment-index="4">
+                                    天氣：晴 <br>( 2015 - 01 - 11)
+                                </sharp>
+                            </sharp>
+
+                            <div class='arrow fragment current-visible arrow-1' data-fragment-index="1">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Cycle GetDataFunc fragment' data-fragment-index="1">
+                                get Data
+                                (JS)
+                            </sharp>
+
+                            <sharp class='Square XML fragment' data-fragment-index="2">
+                                XML
+                            </sharp>
+
+                            <div class='arrow fragment current-visible arrow-2' data-fragment-index="2">
+                                <div class='arrow-img-double'></div>
+                            </div>
+
+                            <sharp class='Cycle SetDOMFunc fragment' data-fragment-index="3">
+                                Set DOM
+                                (JS)
+                            </sharp>
+
+                            <div class='arrow fragment current-visible arrow-3' data-fragment-index="3">
+                                <div class='arrow-img'></div>
+                            </div>
+
+
+                            <div class='arrow fragment current-visible arrow-4' data-fragment-index="4">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='fragment' data-fragment-index="5"></sharp>
+
+                            <sharp class='Square MVC Control fragment' data-fragment-index="6">
+                                <div class='showText'>C?</div>
+                            </sharp>
+
+                            <sharp class='Square MVC Model fragment' data-fragment-index="6">
+                                <div class='showText'>M?</div>
+                            </sharp>
+
+                            <sharp class='Square MVC View fragment' data-fragment-index="6">
+                                <div class='showText'>V?</div>
+                            </sharp>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>  A J A X 的流程<br>似乎很像 MVC   </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='Title' > A J A X - M V C</div>
+                            <div class='Content' >
+                                 <ul style='font-size:50px; line-height:80px;'>
+                                    <li class='autoStepShow'>
+                                        <img src='image/AngularJS.png' width='50px'>
+                                        AngularJS ( 2009 ~ )</li>
+                                    <li class='autoStepShow'>
+                                        <img src='image/120px-Ember.js_Logo_and_Mascot.png' width='50px'>
+                                        Ember.js ( 2011 ~ )</li>
+                                    <li class='autoStepShow'>
+                                        <img src='image/a113229dcd0d4035f516b55601fe01bb_400x400.png' width='50px'>
+                                        JavaScriptMVC ( 2008 ~ )</li>
+                                    <li class='autoStepShow'>
+                                        <img src='image/BackboneJS_logo.png' width='50px'>
+                                        Backbone.js ( 2010 ~ )</li>
+                                    <li class='autoStepShow'>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Backbone.JS_Intro'>
+                            <div class='PageContent'>
+                                <div class='Title' > Backbone.JS - Intro</div>
+                                <div class='Content' >
+                                    <ul style='font-size:50px; line-height:80px;'>
+                                        <li class='fragment' data-fragment-index="0">
+                                            開發人 Jeremy Ashkenas
+                                            </li>
+                                        <li class='fragment' data-fragment-index="1">
+                                            輕量級的JS Framework (6.5kb)
+                                            </li>
+                                        <li class='fragment' data-fragment-index="2">
+                                            基於 underscore.js
+                                            </li>
+                                        <li class='fragment' data-fragment-index="3">
+                                            符合 RESTful JSON 的 軟體架構
+                                            </li>
+                                        <li class='fragment' data-fragment-index="4">
+                                            耦合性低
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class='fragment current-visible PeoplePic' data-fragment-index="0">
+                                    <img src='image/441643406_1280.png' />
+                                </div>
+                                <div class='fragment current-visible backboneDownload' data-fragment-index="1">
+                                    <img src='image/backbone-download.png' />
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class='ShowBox' showboxpage=''>
+                            <div class='PageContent'>
+                                <div class='Title' > Backbone.JS - 功能</div>
+                                <div class='Content' >
+                                    <ul style='font-size:50px; line-height:90px;'>
+                                        <li class='autoStepShow'>
+                                            Model
+                                            <span class='fragment' data-fragment-index="0">：定義資料</span>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            Collection
+                                            <span class='fragment' data-fragment-index="1">：資料表集合</span>
+                                            </li>
+                                        <li class='autoStepShow'>
+                                            View
+                                            <span class='fragment' data-fragment-index="2">：樣板引擎</span>
+                                            </li>
+                                        <li class='autoStepShow'>
+                                            Router
+                                            <span class='fragment' data-fragment-index="3">：錨點記錄</span>
+                                            </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class='ShowBox' showboxpage='Backbone.JS_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > Backbone.JS - Flow</div>
+
+                                <Sharp class='Cycle User'  data-fragment-index="0">
+                                    User
+                                </Sharp>
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="4">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="5">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow fragment current-visible arrow-1' data-fragment-index="6">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <Sharp class='Cycle Init fragment'  data-fragment-index="1">
+                                    Main
+                                </Sharp>
+
+                                <div class='arrow fragment  arrow-2' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <Sharp class='Cycle GetData fragment'  data-fragment-index="2">
+                                    Get Func
+                                </Sharp>
+
+                                <div class='arrow fragment arrow-3' data-fragment-index="3">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <sharp class='Square Data fragment'  data-fragment-index="3">
+                                    Data
+                                </sharp>
+
+                                <div class='arrow fragment arrow-4' data-fragment-index="4">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                                <Sharp class='Cycle Collect fragment'  data-fragment-index="4">
+                                    Collect
+                                </Sharp>
+
+                                <div class='arrow fragment arrow-5' data-fragment-index="5">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <Sharp class='Cycle SetDOM fragment'  data-fragment-index="5">
+                                    Set DOM
+                                </Sharp>
+
+                                <sharp class='Square BackboneAPP fragment'  data-fragment-index="6">
+                                    <div class='Name'>Backbone App</div>
+                                </sharp>
+
+
+                                <sharp class='Square Router fragment'  data-fragment-index="7">
+                                    Router
+                                </sharp>
+
+                                <div class='arrow fragment arrow-6' data-fragment-index="7">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <Sharp class='Cycle Init2 fragment'  data-fragment-index="8">
+                                    Main2
+                                </Sharp>
+
+                                <div class='arrow fragment current-visible arrow-7' data-fragment-index="8">
+                                    <div class='arrow-img'>#Page/1</div>
+
+                                </div>
+
+                                <div class='arrow fragment  arrow-8' data-fragment-index="9">
+                                    <div class='arrow-img'>root</div>
+                                </div>
+
+
+                                <div class="arrow fragment current-visible MPV" data-fragment-index="10">
+                                    MVC?
+                                </div>
+                                <div class="arrow fragment current-visible MPV" data-fragment-index="11">
+                                    <s>MVC?</s>
+                                </div>
+
+                                <div class="arrow fragment MPV" data-fragment-index="12">
+                                    MVP
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='MVP'>
+                            <div class='PageContent'>
+                                <div class='Title' > M V P </div>
+                                <div class='Content' >
+                                    <font color='blue'>M</font>odel–<font color='blue'>V</font>iew–<font color='blue'>P</font>resenter
+                                </div>
+                                <div class='MVP' data-fragment-index="1">
+                                    <img src='image/Model_View_Presenter_GUI_Design_Pattern.png' />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>  Client 端工作越來越重    </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>
+                                    載入套件越來越多...<br>
+                                    管理套件越來越難...<br>
+                                    網頁載入越來越慢...
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>
+                                    Html原生的限制<br>
+                                    困受般的同步循序載入
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='HtmlScript'>
+                        <div class='PageContent'>
+                            <div class='Title' > JS 原生載入問題 </div>
+                            <div class='Content' >
+                                <ul style='font-size:30px; line-height:60px;'>
+                                    <li class='fragment' data-fragment-index="1">
+                                        從上到下 循序載入
+                                    </li>
+                                    <li class='fragment' data-fragment-index="2">
+                                        無法看出載入之間的相依插件性
+                                    </li>
+                                    <li class='fragment' data-fragment-index="3">
+                                        可能載入不需要用到的插件...
+                                    </li>
+                                    <li class='fragment' data-fragment-index="4">
+                                        浪費等待時間與 Client 端效能
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class='HtmlScript fragment current-visible' data-fragment-index="1">
+                                <img src='image/html Script.png' />
+                            </div>
+
+                            <div class='arrow fragment current-visible arrow-1' data-fragment-index="1">
+                                <div class='arrow-img'></div>
+                            </div>
+                            <div class='HtmlScript fragment current-visible' data-fragment-index="2">
+                                <img src='image/html Script.png' />
+                            </div>
+
+                            <div class='arrow fragment current-visible arrow-1' data-fragment-index="2">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>
+                                    由 JS 接管載入 JS ...
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox'>
+                        <div class='PageContent'>
+                            <div class='Title' > A M D </div>
+                            <div class='Content' >
+                                <ul style='font-size:30px; line-height:60px;'>
+                                    <li class='autoStepShow'>
+                                        <font color='blue'>A</font>synchronous
+                                        <div class='fragment' data-fragment-index="0">
+                                            平行載入、管理插件關連性
+                                        </div>
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        <font color='blue'>M</font>odule
+                                        <div class='fragment' data-fragment-index="1">
+                                            模組化載入的套件、關注點分離降低複雜度
+                                        </div>
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        <font color='blue'>D</font>efinition
+                                        <div class='fragment' data-fragment-index="2">
+                                            定義與標準化結構
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='RequireJS_Flow'>
+                        <div class='PageContent'>
+                            <div class='Title' > Require JS - Flow</div>
+
+
+                            <sharp class='Square Page'  data-fragment-index="0">
+                                Page
+                            </sharp>
+
+                            <div class='arrow fragment  arrow-1' data-fragment-index="1">
+                                <div class='arrow-img'></div>
+                            </div>
+
+
+                            <Sharp class='Cycle RequireJS fragment'  data-fragment-index="1">
+                                Require.JS
+                            </Sharp>
+
+                            <div class='arrow fragment  arrow-2' data-fragment-index="2">
+                                <div class='arrow-img'></div>
+                            </div>
+
+
+                            <sharp class='Square Config fragment'  data-fragment-index="2">
+                                Config
+                            </sharp>
+
+
+                            <div class='Code fragment current-visible'  data-fragment-index="3">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+require.config({
+    baseUrl: baseUrl+ "/js/",
+    path:{
+        'jquery' :'jquery-1.11.2.min',
+    },
+
+    shim: {
+        'jquery-1.11.2.min':{
+        　　　exports: '$'
+        },
+        'underscore':{
+        　　　exports: '_'
+        },
+        'backbone': {
+            deps: ['underscore'],
+            exports: 'Backbone'
+        }
+    }
+});</code></pre>
+                            </div>
+
+
+                        <Sharp class='Cycle jQuery fragment'  data-fragment-index="4">
+                            jQuery
+                        </Sharp>
+                        <Sharp class='Cycle underscore fragment'  data-fragment-index="4">
+                            underscore
+                        </Sharp>
+                        <Sharp class='Cycle backbone fragment'  data-fragment-index="4">
+                            backbone
+                        </Sharp>
+
+                        <div class='arrow fragment  arrow-3 current-visible' data-fragment-index="5">
+                            <div class='arrow-img'></div>
+                        </div>
+
+                        <div class='arrow fragment  arrow-3 current-visible' data-fragment-index="6">
+                            <div class='arrow-img'></div>
+                        </div>
+
+                        <div class='cross Cross fragment  current-visible' data-fragment-index="6">
+                            <div class='cross-img'></div>
+                        </div>
+
+                        <div class='Code fragment current-visible'  data-fragment-index="7">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+require.config({
+    baseUrl: baseUrl+ "/js/",
+    path:{
+        'jquery' :'jquery-1.11.2.min',
+    },
+
+    shim: {
+        'jquery-1.11.2.min':{
+        　　　exports: '$'
+        },
+        'underscore':{
+        　　　exports: '_'
+        },
+        'backbone': {
+            deps: ['underscore'],
+            exports: 'Backbone'
+        }
+    }
+});</code></pre>
+                            </div>
+
+
+                        <div class='arrow fragment  arrow-4 current-visible' data-fragment-index="8">
+                            <div class='arrow-img'></div>
+                        </div>
+
+                        <div class='arrow fragment  arrow-3 current-visible' data-fragment-index="9">
+                            <div class='arrow-img'></div>
+                        </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>After Learning...</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>Do Something</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='Title' >語言檔管理平台</div>
+                            <div class='Content'>
+
+                                <ul style='font-size:40px; line-height:80px;'>
+                                    <li class='autoStepShow'>
+                                        不同平台的語言檔格式皆不相同
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        統一單一平台編輯
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        清楚方變的分類管理模式
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        可輸出與輸入語言檔
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='Title' >國際化 與 在地化</div>
+                            <div class='Content'>
+                                <ul style='font-size:40px; line-height:80px;'>
+                                    <li>
+                                        internationalization and localization
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        i18N、L10N
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        國際化：軟體可適用於任何地方
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        在地化：讓軟體可更適合於特定地區使用
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        讓 語言、文化、書寫習慣 與程式本身拖勾
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='LangFile_Flow'>
+                        <div class='PageContent'>
+                            <div class='Title' >語言檔 概念</div>
+
+                            <sharp class='Square Page fragment2'  data-fragment-index="">
+                                Page
+                            </sharp>
+
+                            <div class='String String1 fragment'  data-fragment-index="1" data-fragment-index='3'>
+                                Menu
+                            </div>
+
+                            <sharp class='Cycle Selector fragment'  data-fragment-index="4">
+                                Selector
+                            </sharp>
+
+
+                            <sharp class='Square File1 fragment'  data-fragment-index="2">
+                                en-US
+                            </sharp>
+                            <sharp class='Square File2 fragment'  data-fragment-index="2">
+                                zh-TW
+                            </sharp>
+                            <sharp class='Square File3 fragment'  data-fragment-index="2">
+                                ja-JP
+                            </sharp>
+
+
+
+
+                            <div class='String String2 fragment'  data-fragment-index="3">
+                                strMainPage_Menu
+                            </div>
+
+                            <div class='String String3 fragment'  data-fragment-index="3" data-fragment-index-out='9'>
+                                Menu
+                            </div>
+                            <div class='String String4 fragment'  data-fragment-index="3" data-fragment-index-out='9'>
+                                選單
+                            </div>
+                            <div class='String String5 fragment'  data-fragment-index="3" data-fragment-index-out='9'>
+                                メニュー
+                            </div>
+
+
+
+                            <div class='String String3 selected fragment current-visible'  data-fragment-index="5">
+                                Menu
+                            </div>
+
+                            <div class='String String4 selected fragment current-visible'  data-fragment-index="6">
+                                選單
+                            </div>
+
+
+                            <div class='arrow fragment  arrow-1 ' data-fragment-index="4">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Cycle lang fragment'  data-fragment-index="5">
+                                en-US
+                            </sharp>
+
+
+
+                            <div class='arrow fragment  arrow-2 ' data-fragment-index="5">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <div class='arrow fragment arrow-3 current-visible' data-fragment-index="5">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Cycle lang fragment'  data-fragment-index="6">
+                                zh-TW
+                            </sharp>
+
+                            <div class='arrow fragment arrow-4 ' data-fragment-index="6">
+                                <div class='arrow-img'></div>
+                            </div>
+
+
+                            <sharp class='Cycle Manager fragment'  data-fragment-index="7">
+                                Manager
+                            </sharp>
+
+                            <div class='arrow fragment  arrow-5 ' data-fragment-index="8">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <div class='arrow fragment  arrow-6 ' data-fragment-index="8">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <div class='arrow fragment  arrow-7 ' data-fragment-index="8">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <div class='String String6 fragment '  data-fragment-index="9">
+                                Menu
+                            </div>
+                            <div class='String String7 fragment'  data-fragment-index="9">
+                                選單
+                            </div>
+                            <div class='String String8 fragment'  data-fragment-index="9">
+                                メニュー
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>分析需求</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                 <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='LangFile_DB'>
+                        <div class='PageContent'>
+                            <div class='Title' > DB 分析 </div>
+
+                            <sharp class='Square DB Platform fragment'  data-fragment-index="1">
+                                Platform
+                            </sharp>
+
+                            <div class='arrow fragment arrow-1 ' data-fragment-index="2">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Square DB Classify fragment'  data-fragment-index="2">
+                                Classify
+                            </sharp>
+
+                            <div class='arrow fragment arrow-2 ' data-fragment-index="3">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Square DB String fragment'  data-fragment-index="3">
+                                String
+                            </sharp>
+
+                            <div class='arrow fragment arrow-3 ' data-fragment-index="4">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Square DB String_Content fragment'  data-fragment-index="4">
+                                Content
+                            </sharp>
+
+                            <div class='arrow fragment arrow-4 ' data-fragment-index="5">
+                                <div class='arrow-img'></div>
+                            </div>
+
+
+                            <sharp class='Square DB Lang fragment'  data-fragment-index="5">
+                                Lang
+                            </sharp>
+
+
+                            <sharp class='Square DB Member fragment'  data-fragment-index="7">
+                                Member
+                            </sharp>
+
+                            <div class='arrow fragment arrow-5' data-fragment-index="6">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Square DB Log fragment'  data-fragment-index="6">
+                                Log
+                            </sharp>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='LangFile_DB'>
+                            <div class='PageContent'>
+                                <div class='Title' > 動作 需求</div>
+                                <div class='Content'>
+                                    <ul style='font-size:40px; line-height:70px;'>
+                                        <li class='autoStepShow'>
+                                            Lang : 新增 修改 <span class='fragment fade-out' data-fragment-index='1'>刪除</span>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            Platform : 新增 修改 <span class='fragment fade-out' data-fragment-index='1'>刪除</span>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            Classify : 新增 修改 <span class='fragment fade-out' data-fragment-index='1'>刪除</span>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            String : 新增 修改 <span class='fragment fade-out' data-fragment-index='1'>刪除</span>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            Member : 新增 修改 <span class='fragment fade-out' data-fragment-index='1'>刪除</span>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            Generate : 匯入 匯出
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Lang_Action_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > Lang 動作</div>
+
+
+                                <sharp class='Square User'  data-fragment-index="1">
+                                    User
+                                </sharp>
+
+                                <sharp class='Cycle Add fragment'  data-fragment-index="1">
+                                    add
+                                </sharp>
+
+                                <sharp class='Cycle Update fragment'  data-fragment-index="1">
+                                    Update
+                                </sharp>
+
+
+                                <sharp class='Square DB Lang fragment'  data-fragment-index="2">
+                                    Lang
+                                </sharp>
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="2">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Platform_Action_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > Platform 動作</div>
+
+
+                                <sharp class='Square User'  data-fragment-index="1">
+                                    User
+                                </sharp>
+
+                                <sharp class='Cycle Add fragment'  data-fragment-index="1">
+                                    add
+                                </sharp>
+
+                                <sharp class='Cycle Update fragment'  data-fragment-index="1">
+                                    Update
+                                </sharp>
+
+
+                                <sharp class='Square DB Platform fragment'  data-fragment-index="2">
+                                    Platform
+                                </sharp>
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="2">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Classify_Action_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > Classify 動作</div>
+
+
+                                <sharp class='Square User'  data-fragment-index="1">
+                                    User
+                                </sharp>
+
+                                <sharp class='Cycle Add fragment'  data-fragment-index="2">
+                                    add
+                                </sharp>
+
+                                <sharp class='Cycle Update fragment'  data-fragment-index="2">
+                                    Update
+                                </sharp>
+
+
+                                <sharp class='Square DB Classify fragment'  data-fragment-index="3">
+                                    Classify
+                                </sharp>
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="3">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <sharp class='Cycle GetPlatform fragment'  data-fragment-index="1">
+                                    select
+                                </sharp>
+
+                                <div class='arrow  arrow-5 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square DB Platform fragment'  data-fragment-index="1">
+                                    Platform
+                                </sharp>
+
+                                <div class='arrow  arrow-6 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='String_Action_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > String 動作</div>
+
+
+                                <sharp class='Square User'  data-fragment-index="1">
+                                    User
+                                </sharp>
+
+                                <sharp class='Cycle Add fragment'  data-fragment-index="3">
+                                    add
+                                </sharp>
+
+                                <sharp class='Cycle Update fragment'  data-fragment-index="3">
+                                    Update
+                                </sharp>
+
+
+                                <sharp class='Square DB String fragment'  data-fragment-index="4">
+                                    String
+                                </sharp>
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="4">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="4">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <sharp class='Cycle GetPlatform fragment'  data-fragment-index="1">
+                                    select
+                                </sharp>
+
+                                <sharp class='Cycle GetClassify fragment'  data-fragment-index="2">
+                                    select
+                                </sharp>
+
+                                <div class='arrow  arrow-5 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square DB Platform fragment'  data-fragment-index="1">
+                                    Platform
+                                </sharp>
+
+                                <sharp class='Square DB Classify fragment'  data-fragment-index="2">
+                                    Classify
+                                </sharp>
+
+                                <div class='arrow  arrow-6 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-7 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-8 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square DB StringContent fragment'  data-fragment-index="5">
+                                    Content
+                                </sharp>
+
+                                <div class='arrow  arrow-9 fragment' data-fragment-index="5">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <sharp class='Square DB Lang fragment'  data-fragment-index="5">
+                                    Lang
+                                </sharp>
+
+                                <div class='arrow  arrow-10 fragment' data-fragment-index="5">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Member_Action_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > Member 動作</div>
+
+
+                                <sharp class='Square User'  data-fragment-index="1">
+                                    User
+                                </sharp>
+
+                                <sharp class='Cycle Add fragment'  data-fragment-index="3">
+                                    add
+                                </sharp>
+
+                                <sharp class='Cycle Update fragment'  data-fragment-index="3">
+                                    Update
+                                </sharp>
+
+
+                                <sharp class='Square DB Classify fragment'  data-fragment-index="4">
+                                    Member
+                                </sharp>
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="4">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="4">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <sharp class='Cycle GetPlatform fragment'  data-fragment-index="1">
+                                    select
+                                </sharp>
+
+                                <div class='arrow  arrow-5 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square DB Platform fragment'  data-fragment-index="1">
+                                    Platform
+                                </sharp>
+
+                                <sharp class='Square DB Lang fragment'  data-fragment-index="2">
+                                    Lang
+                                </sharp>
+
+                                <div class='arrow  arrow-6 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-7 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Generate_Export_Action_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > Generate 匯出動作</div>
+
+
+                                <sharp class='Square User'  data-fragment-index="1">
+                                    User
+                                </sharp>
+
+
+
+                                <sharp class='Cycle GetPlatform fragment'  data-fragment-index="1">
+                                    select
+                                </sharp>
+
+                                <sharp class='Cycle GetClassify fragment'  data-fragment-index="2">
+                                    select
+                                </sharp>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square DB Platform fragment'  data-fragment-index="1">
+                                    Platform
+                                </sharp>
+
+                                <sharp class='Square DB Classify fragment'  data-fragment-index="2">
+                                    Classify
+                                </sharp>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                                <sharp class='Cycle GetLang fragment'  data-fragment-index="3">
+                                    select
+                                </sharp>
+
+                                <div class='arrow  arrow-6 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                                <div class='arrow  arrow-5 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square DB Lang fragment'  data-fragment-index="3">
+                                    Lang
+                                </sharp>
+
+
+                                <sharp class='Cycle Export fragment'  data-fragment-index="4">
+                                    Export
+                                </sharp>
+
+                                <div class='arrow  arrow-7 fragment' data-fragment-index="4">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-8 fragment' data-fragment-index="5">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square Zip fragment'  data-fragment-index="5">
+                                    Zip
+                                </sharp>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Generate_Import_Action_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' > Generate 匯入動作</div>
+
+
+                                <sharp class='Square User'  data-fragment-index="1">
+                                    User
+                                </sharp>
+
+
+
+                                <sharp class='Cycle GetPlatform fragment'  data-fragment-index="1">
+                                    select
+                                </sharp>
+
+                                <sharp class='Cycle GetFile fragment'  data-fragment-index="2">
+                                    Get
+                                </sharp>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square DB Platform fragment'  data-fragment-index="1">
+                                    Platform
+                                </sharp>
+
+                                <sharp class='Square  FilePack fragment'  data-fragment-index="2">
+                                    Lang Pack
+                                </sharp>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="2">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                                <sharp class='Cycle Import fragment'  data-fragment-index="3">
+                                    Import
+                                </sharp>
+
+                                <div class='arrow  arrow-6 fragment' data-fragment-index="3">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='cross cross-1 fragment' data-fragment-index="4">
+                                    <div class='cross-img'></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                </section>
+
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Parse_PO'>
+                            <div class='PageContent'>
+                                <div class='Title' >解析語言檔 ： PO</div>
+                                <div class='Content'>
+
+                                    <ul style='font-size:40px; line-height:50px;'>
+                                        <li>
+                                            <ul style='font-size:40px; line-height:50px;'>
+                                                <li>
+                                                    sourceMessages.c
+                                                </li>
+                                                <li>
+                                                    en_US
+                                                    <ul style='font-size:30px; line-height:40px;'>
+                                                        <li>
+                                                            messages.po
+                                                        </li>
+                                                        <li>
+                                                            messages.mo
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    zh_TW
+                                                    <ul style='font-size:30px; line-height:40px;'>
+                                                        <li>
+                                                            messages.po
+                                                        </li>
+                                                        <li>
+                                                            messages.mo
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                   ....
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Parse_PO_Code'>
+                            <div class='PageContent'>
+                                <div class='Title' >解析語言檔 ： PO</div>
+                                <div class='Content' style="">
+                                    <ul style='font-size:40px; line-height:50px;width:80%'>
+                                        <li class='fragment current-visible'  data-fragment-index="3">清除換行 保留關鍵訊息 replace("","\"\n\"");</li>
+                                        <li class='fragment current-visible'  data-fragment-index="5">循行正規化檢查特定關鍵字串 msgid、msgstr</li>
+                                        <li class='fragment current-visible'  data-fragment-index="7">
+                                            msgid為空的下一個msgstr中，使用正規劃找 Language: (?P<Language>[a-z]{2}[-_][a-zA-Z]{2})
+                                        </li>
+                                        <li class='fragment current-visible'  data-fragment-index="9">
+                                        循行正規化檢查，將 msgctxt 當分類，將 msgid 當StringKey，將 msgstr 當文字內容，三個變數滿足後存入資料庫
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class='SourceC fragment current-visible'  data-fragment-index="1">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+textdomain( "gggolife" );
+pgettext("gggolife", "Sign up");
+pgettext("gggolife", "About");
+pgettext("gggolife", "Privacy");
+pgettext("gggolife", "Terms");
+pgettext("gggolife", "Feedback");
+pgettext("gggolife", "Copyright");
+pgettext("gggolife", "GOYOURLIFE INC.");
+pgettext("gggolife", "Sign in GoLife Account");
+pgettext("gggolife", "Log in GoLife");
+pgettext("gggolife", "Email");
+pgettext("gggolife", "Password");
+pgettext("gggolife", "Login");
+pgettext("gggolife", "Login with Facebook");
+pgettext("gggolife", "Login with QQ");
+pgettext("gggolife", "Login with Weibo");
+pgettext("gggolife", "Login with WeChat");
+pgettext("gggolife", "Login with social network accounts");
+pgettext("gggolife", " is now using GoLife");
+pgettext("gggolife", "Stay healthy for those you love");
+pgettext("gggolife", "GOLiFE - Smart wearables, healthy life");
+pgettext("gggolife", "Keep me logged in");
+pgettext("gggolife", "Forget Password?");
+pgettext("gggolife", "Invalid account or password");
+pgettext("gggolife", "Login with Facebook last time?");
+pgettext("gggolife", "You attempt to login several times; <a href='{link}'>Forget password?</a>");
+</code></pre>
+                            <div class='SourceC_Name  fragment2'  data-fragment-index="3">
+                                    SourceMessages.c
+                                </div>
+
+                            </div>
+
+                            <div class='PO fragment current-visible'  data-fragment-index="1">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+msgid ""
+msgstr ""
+"Project-Id-Version: anyway2fun\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-24 17:04+0800\n"
+"PO-Revision-Date: 2014-12-24 17:04+0800\n"
+"Last-Translator: \n"
+"Language-Team:  dev@anyway2fun.com\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-Bookmarks: 0,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../SourceMessages.c:2
+msgctxt "gggolife"
+msgid "Sign up"
+msgstr "注册"
+
+#: ../SourceMessages.c:3
+msgctxt "gggolife"
+msgid "About"
+msgstr "关于 GOLiFE"
+
+...
+...
+...
+...
+
+#: ../SourceMessages.c:66
+msgctxt "gggolife"
+msgid ""
+"Verification succeeds.<br />You are ready to use all GOLiFE services now! "
+"Enjoy and have fun.<br /><br />The page will be redirected after 3 seconds."
+msgstr ""
+"认证成功。<br />你现在可以使用所有 GOLiFE 服务，快开始吧！<br /><br />此页面"
+"在 3 秒后会自动转址。"
+
+</code></pre>
+                                <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                    Messages.po
+                                </div>
+
+                            </div>
+
+
+                            <div class='PO2 fragment current-visible'  data-fragment-index="2">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+msgid ""
+msgstr ""
+"Project-Id-Version: anyway2fun\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-24 17:04+0800\n"
+"PO-Revision-Date: 2014-12-24 17:04+0800\n"
+"Last-Translator: \n"
+"Language-Team:  dev@anyway2fun.com\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-Bookmarks: 0,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../SourceMessages.c:2
+msgctxt "gggolife"
+msgid "Sign up"
+msgstr "注册"
+
+#: ../SourceMessages.c:3
+msgctxt "gggolife"
+msgid "About"
+msgstr "关于 GOLiFE"
+
+...
+...
+...
+...
+
+#: ../SourceMessages.c:66
+msgctxt "gggolife"
+msgid ""
+"Verification succeeds.<br />You are ready to use all GOLiFE services now! "
+"Enjoy and have fun.<br /><br />The page will be redirected after 3 seconds."
+msgstr ""
+"认证成功。<br />你现在可以使用所有 GOLiFE 服务，快开始吧！<br /><br />此页面"
+"在 3 秒后会自动转址。"
+
+</code></pre>
+                                <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                    Messages.po
+                                </div>
+
+                            </div>
+
+                            <div class='PO3 fragment current-visible'  data-fragment-index="4">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+msgid ""
+msgstr "Project-Id-Version: anyway2fun\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2014-12-24 17:04+0800\nPO-Revision-Date: 2014-12-24 17:04+0800\nLast-Translator: \nLanguage-Team:  dev@anyway2fun.com\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nX-Poedit-KeywordsList: _;gettext;gettext_noop\nX-Poedit-Basepath: .\nX-Poedit-SourceCharset: iso-8859-1\nX-Poedit-Bookmarks: 0,-1,-1,-1,-1,-1,-1,-1,-1,-1\nX-Generator: Poedit 1.6.7\nX-Poedit-SearchPath-0: ..\n"
+
+#: ../SourceMessages.c:2
+msgctxt "gggolife"
+msgid "Sign up"
+msgstr "注册"
+
+#: ../SourceMessages.c:3
+msgctxt "gggolife"
+msgid "About"
+msgstr "关于 GOLiFE"
+
+...
+...
+...
+...
+
+#: ../SourceMessages.c:66
+msgctxt "gggolife"
+msgid "Verification succeeds.<br />You are ready to use all GOLiFE services now! Enjoy and have fun.<br /><br />The page will be redirected after 3 seconds."
+msgstr "认证成功。<br />你现在可以使用所有 GOLiFE 服务，快开始吧！<br /><br />此页面在 3 秒后会自动转址。"
+
+</code></pre>
+                                <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                    Messages.po
+                                </div>
+
+                            </div>
+
+                            <div class='PO3 fragment current-visible'  data-fragment-index="6">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+msgid ""
+msgstr "Project-Id-Version: anyway2fun\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2014-12-24 17:04+0800\nPO-Revision-Date: 2014-12-24 17:04+0800\nLast-Translator: \nLanguage-Team:  dev@anyway2fun.com\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nX-Poedit-KeywordsList: _;gettext;gettext_noop\nX-Poedit-Basepath: .\nX-Poedit-SourceCharset: iso-8859-1\nX-Poedit-Bookmarks: 0,-1,-1,-1,-1,-1,-1,-1,-1,-1\nX-Generator: Poedit 1.6.7\nX-Poedit-SearchPath-0: ..\n"
+
+#: ../SourceMessages.c:2
+msgctxt "gggolife"
+msgid "Sign up"
+msgstr "注册"
+
+#: ../SourceMessages.c:3
+msgctxt "gggolife"
+msgid "About"
+msgstr "关于 GOLiFE"
+
+...
+...
+...
+...
+
+#: ../SourceMessages.c:66
+msgctxt "gggolife"
+msgid "Verification succeeds.<br />You are ready to use all GOLiFE services now! Enjoy and have fun.<br /><br />The page will be redirected after 3 seconds."
+msgstr "认证成功。<br />你现在可以使用所有 GOLiFE 服务，快开始吧！<br /><br />此页面在 3 秒后会自动转址。"
+
+</code></pre>
+                                <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                    Messages.po
+                                </div>
+
+                            </div>
+
+
+                            <div class='PO4 fragment current-visible'  data-fragment-index="8">
+                                <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+msgid ""
+msgstr "Project-Id-Version: anyway2fun\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2014-12-24 17:04+0800\nPO-Revision-Date: 2014-12-24 17:04+0800\nLast-Translator: \nLanguage-Team:  dev@anyway2fun.com\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nX-Poedit-KeywordsList: _;gettext;gettext_noop\nX-Poedit-Basepath: .\nX-Poedit-SourceCharset: iso-8859-1\nX-Poedit-Bookmarks: 0,-1,-1,-1,-1,-1,-1,-1,-1,-1\nX-Generator: Poedit 1.6.7\nX-Poedit-SearchPath-0: ..\n"
+
+#: ../SourceMessages.c:2
+msgctxt "gggolife"
+msgid "Sign up"
+msgstr "注册"
+
+#: ../SourceMessages.c:3
+msgctxt "gggolife"
+msgid "About"
+msgstr "关于 GOLiFE"
+
+...
+...
+...
+...
+
+#: ../SourceMessages.c:66
+msgctxt "gggolife"
+msgid "Verification succeeds.<br />You are ready to use all GOLiFE services now! Enjoy and have fun.<br /><br />The page will be redirected after 3 seconds."
+msgstr "认证成功。<br />你现在可以使用所有 GOLiFE 服务，快开始吧！<br /><br />此页面在 3 秒后会自动转址。"
+
+</code></pre>
+                                <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                    Messages.po
+                                </div>
+
+                            </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Parse_PO'>
+                            <div class='PageContent'>
+                                <div class='Title' >解析語言檔 ： PO</div>
+                                <div class='Content'>
+                                    <ul style='font-size:40px; line-height:70px;width:80%'>
+                                        <li class='autoStepShow'>
+                                            無需 sourceMessages.c  即可做到輸入PO
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            可從 PO 中得到 語系、分類、StringID、內容
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            輸出時一定要產生 sourceMessages.c，這是轉 mo 檔的必要檔案
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+                 <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Parse_JS'>
+                            <div class='PageContent'>
+                                <div class='Title' >解析語言檔 ： JS</div>
+                                <div class='Content'>
+
+                                    <ul style='font-size:40px; line-height:50px;'>
+                                        <li>
+                                            <ul style='font-size:40px; line-height:50px;'>
+                                                <li>
+                                                    message.js
+                                                </li>
+                                                <li>
+                                                    friends.js
+                                                </li>
+                                                <li>
+                                                    zh-tw
+                                                    <ul style='font-size:30px; line-height:40px;'>
+                                                        <li>
+                                                            message.js
+                                                        </li>
+                                                        <li>
+                                                            friends.js
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    zh-cn
+                                                    <ul style='font-size:30px; line-height:40px;'>
+                                                        <li>
+                                                            message.js
+                                                        </li>
+                                                        <li>
+                                                            friends.js
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    ...
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                         <div class='ShowBox' showboxpage='Parse_JS_Code'>
+                            <div class='PageContent'>
+                                <div class='Title' >解析語言檔 ： JS</div>
+                                <div class='Content' style="">
+                                    <ul style='font-size:40px; line-height:50px;width:80%'>
+                                        <li class='fragment current-visible'  data-fragment-index="2">
+                                            檢查第一筆資訊 Key 是否為 root, 如果是 取得root內的值當做即將處理的字串資訊，如果不是直接取出資料處理
+                                        </li>
+                                        <li class='fragment current-visible'  data-fragment-index="4">
+                                            清除不必要換行
+                                        </li>
+                                        <li class='fragment'  data-fragment-index="6">
+                                            正規化取出StringID、內容，針對內容型態做不同的儲存方式
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class='JS1 fragment current-visible'  data-fragment-index="1">
+                                    <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+// default locale 'root': this is for en_us
+define({
+    'root': {
+        'profileNameLengthError': 'Please set your name between ' + GOOSE_MIN_LEN_FULLNAME + ' and ' + GOOSE_MAX_LEN_FULLNAME + ' in length of characters',
+        'profileTagLengthError': 'Please set your tag information between ' + PROFILE_MIN_LEN_TAG + ' and ' + PROFILE_MAX_LEN_TAG + ' in length of characters',
+        'profileAddrLengthError': 'Please set your address between ' + PROFILE_MIN_LEN_ADDRESS + ' and ' + PROFILE_MAX_LEN_ADDRESS + ' in length of characters',
+        'profileSaveSuccess': 'Profile saved.',
+        'profileSaveError': 'Failed to save. Please try again.',
+        'passwordLengthError': 'Please set your new password between ' + GOOSE_MIN_LEN_PASSWORD + ' and ' + GOOSE_MAX_LEN_PASSWORD + ' in length of characters',
+        'passwordConfirmError': 'Your new password is different',
+        'passwordUnauthorizedError': 'Your old password is wrong',
+        'passwordSaveSuccess': 'Password updated',
+        'resendVerificationMailDone': function (email) {
+                return 'Verification email has been sent to <b>'+ email +'</b>. If you request to resend several times, please make sure that you get the latest one and click the link in it.'
+            },
+        'unknownError': 'Unknown error, please try again',
+        'settingsSaved': 'Settings saved',
+        'confirm': 'Confirm',
+        'addFriend': 'Add as friend',
+        'removeFriend': 'Remove friend',
+        'ignoreFriend': 'Reject',
+        'friendshipWaitingForSubject': 'Invitation sent',
+        'loginRequired': 'Please log in',
+        'addFriendLoginRequired': 'Please <a href="' + jsVars.loginUrl + '">log in</a> before adding friend.',
+        'Login': 'Login',
+        'uploadYourProfilePicture': 'Upload Your Profile Picture',
+        'selectYourOwnProfilePicture': 'Select your own profile picture',
+        'upload': 'Upload',
+        'save': 'Save',
+        'back': 'Back',
+        'avatarSupportFileType': 'Avatar only support the file type of jpg, png and gif'
+    },
+    'zh-tw': true,
+    'zh-cn': true,
+    'ja-jp': true,
+});
+                                    </code></pre>
+                                    <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                        message.js
+                                    </div>
+                                </div>
+
+                                <div class='JS2 fragment current-visible'  data-fragment-index="1">
+                                    <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+define({
+    'profileNameLengthError': '全名欄位必須介於 ' + GOOSE_MIN_LEN_FULLNAME + ' 到 ' + GOOSE_MAX_LEN_FULLNAME + ' 字元之間',
+    'profileTagLengthError': '標籤欄位必須介於 ' + PROFILE_MIN_LEN_TAG + ' 到 ' + PROFILE_MAX_LEN_TAG + ' 字元之間',
+    'profileAddrLengthError': '地址欄位必須介於 ' + PROFILE_MIN_LEN_ADDRESS + ' 到 ' + PROFILE_MAX_LEN_ADDRESS + ' 字元之間',
+    'profileSaveSuccess': '個人資料儲存成功',
+    'profileSaveError': '儲存失敗，請再試一次',
+    'passwordLengthError': '密碼必須介於 ' + GOOSE_MIN_LEN_PASSWORD + ' 到 ' + GOOSE_MAX_LEN_PASSWORD + ' 字元之間',
+    'passwordConfirmError': '請確認輸入的新密碼正確',
+    'passwordUnauthorizedError': '舊密碼錯誤，請輸入正確的密碼',
+    'passwordSaveSuccess': '密碼更新完成',
+    'resendVerificationMailDone': function (email) {
+        return '認證信已發送至 <b>'+ email +'</b>。如果你重發認證信好幾次，請確定自己已經收到最新一封並點擊其中的連結。'
+    },
+    'unknownError': '未知錯誤，請再試一次',
+    'settingsSaved': '設定儲存成功',
+    'confirm': '確認',
+    'addFriend': '加為好友',
+    'removeFriend': '移除好友',
+    'ignoreFriend': '拒絕',
+    'friendshipWaitingForSubject': '交友邀請已送出',
+    'loginRequired': '請登入系統',
+    'addFriendLoginRequired': '要加好友請先<a href="' + jsVars.loginUrl + '">登入</a>',
+    'Login': '登入',
+    'uploadYourProfilePicture': '更新你的大頭貼',
+    'selectYourOwnProfilePicture': '選擇你的大頭貼檔案',
+    'upload': '上傳',
+    'save': '儲存',
+    'back': '上一步',
+    'avatarSupportFileType': '頭像只支援 jpg, png 和 gif 的格式'
+});
+                                    </code></pre>
+                                    <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                        zh-tw/message.js
+                                    </div>
+                                </div>
+
+                                <div class='JS3 fragment current-visible'  data-fragment-index="3">
+                                    <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+define({
+    'profileNameLengthError': '全名欄位必須介於 ' + GOOSE_MIN_LEN_FULLNAME + ' 到 ' + GOOSE_MAX_LEN_FULLNAME + ' 字元之間',
+    'profileTagLengthError': '標籤欄位必須介於 ' + PROFILE_MIN_LEN_TAG + ' 到 ' + PROFILE_MAX_LEN_TAG + ' 字元之間',
+    'profileAddrLengthError': '地址欄位必須介於 ' + PROFILE_MIN_LEN_ADDRESS + ' 到 ' + PROFILE_MAX_LEN_ADDRESS + ' 字元之間',
+    'profileSaveSuccess': '個人資料儲存成功',
+    'profileSaveError': '儲存失敗，請再試一次',
+    'passwordLengthError': '密碼必須介於 ' + GOOSE_MIN_LEN_PASSWORD + ' 到 ' + GOOSE_MAX_LEN_PASSWORD + ' 字元之間',
+    'passwordConfirmError': '請確認輸入的新密碼正確',
+    'passwordUnauthorizedError': '舊密碼錯誤，請輸入正確的密碼',
+    'passwordSaveSuccess': '密碼更新完成',
+    'resendVerificationMailDone': function (email) {
+        return '認證信已發送至 <b>'+ email +'</b>。如果你重發認證信好幾次，請確定自己已經收到最新一封並點擊其中的連結。'
+    },
+    'unknownError': '未知錯誤，請再試一次',
+    'settingsSaved': '設定儲存成功',
+    'confirm': '確認',
+    'addFriend': '加為好友',
+    'removeFriend': '移除好友',
+    'ignoreFriend': '拒絕',
+    'friendshipWaitingForSubject': '交友邀請已送出',
+    'loginRequired': '請登入系統',
+    'addFriendLoginRequired': '要加好友請先<a href="' + jsVars.loginUrl + '">登入</a>',
+    'Login': '登入',
+    'uploadYourProfilePicture': '更新你的大頭貼',
+    'selectYourOwnProfilePicture': '選擇你的大頭貼檔案',
+    'upload': '上傳',
+    'save': '儲存',
+    'back': '上一步',
+    'avatarSupportFileType': '頭像只支援 jpg, png 和 gif 的格式'
+});
+                                    </code></pre>
+                                    <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                        zh-tw/message.js
+                                    </div>
+                                </div>
+
+                                <div class='JS3 fragment current-visible'  data-fragment-index="5">
+                                    <pre><code class="js" data-trim contenteditable style="font-size: 18px;">
+define({
+    'profileNameLengthError': '全名欄位必須介於 ' + GOOSE_MIN_LEN_FULLNAME + ' 到 ' + GOOSE_MAX_LEN_FULLNAME + ' 字元之間',
+    'profileTagLengthError': '標籤欄位必須介於 ' + PROFILE_MIN_LEN_TAG + ' 到 ' + PROFILE_MAX_LEN_TAG + ' 字元之間',
+    'profileAddrLengthError': '地址欄位必須介於 ' + PROFILE_MIN_LEN_ADDRESS + ' 到 ' + PROFILE_MAX_LEN_ADDRESS + ' 字元之間',
+    'profileSaveSuccess': '個人資料儲存成功',
+    'profileSaveError': '儲存失敗，請再試一次',
+    'passwordLengthError': '密碼必須介於 ' + GOOSE_MIN_LEN_PASSWORD + ' 到 ' + GOOSE_MAX_LEN_PASSWORD + ' 字元之間',
+    'passwordConfirmError': '請確認輸入的新密碼正確',
+    'passwordUnauthorizedError': '舊密碼錯誤，請輸入正確的密碼',
+    'passwordSaveSuccess': '密碼更新完成',
+    'resendVerificationMailDone': function (email) {return '認證信已發送至 <b>'+ email +'</b>。如果你重發認證信好幾次，請確定自己已經收到最新一封並點擊其中的連結。'},
+    'unknownError': '未知錯誤，請再試一次',
+    'settingsSaved': '設定儲存成功',
+    'confirm': '確認',
+    'addFriend': '加為好友',
+    'removeFriend': '移除好友',
+    'ignoreFriend': '拒絕',
+    'friendshipWaitingForSubject': '交友邀請已送出',
+    'loginRequired': '請登入系統',
+    'addFriendLoginRequired': '要加好友請先<a href="' + jsVars.loginUrl + '">登入</a>',
+    'Login': '登入',
+    'uploadYourProfilePicture': '更新你的大頭貼',
+    'selectYourOwnProfilePicture': '選擇你的大頭貼檔案',
+    'upload': '上傳',
+    'save': '儲存',
+    'back': '上一步',
+    'avatarSupportFileType': '頭像只支援 jpg, png 和 gif 的格式'
+});
+                                    </code></pre>
+                                    <div class='PO_Name  fragment2'  data-fragment-index="3">
+                                        zh-tw/message.js
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Parse_PO'>
+                            <div class='PageContent'>
+                                <div class='Title' >解析語言檔 ： JS</div>
+                                <div class='Content'>
+                                    <ul style='font-size:40px; line-height:70px;width:80%'>
+                                        <li class='autoStepShow'>
+                                            有兩種不同的結構檔案
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            可從 JS 中得到 StringID、內容，從上傳的檔名得到 分類，無法取得 語系
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            輸出時要有一個基礎語言當做root檔，通常為英文
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='Title' >解析語言檔 結論</div>
+                            <div class='Content'>
+                                <ul style='font-size:40px; line-height:80px;'>
+                                    <li class='autoStepShow'>
+                                        語言檔必須未編譯過的文字檔
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        無法製作通用型的 解析器 與 輸出器
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        無法從語言檔中得到完整資訊
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        定義基礎語言為英文
+                                    </li>
+                                    <li class='autoStepShow'>
+                                        檢查衝突
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='Generate_Import_Action_Flow'>
+                        <div class='PageContent'>
+                            <div class='Title' > Generate 匯入動作</div>
+
+
+                            <sharp class='Square User'>
+                                User
+                            </sharp>
+
+
+
+                            <sharp class='Cycle GetPlatform'>
+                                select
+                            </sharp>
+
+                            <sharp class='Cycle GetFile'>
+                                Get
+                            </sharp>
+
+                            <div class='arrow  arrow-3'>
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Square DB Platform'>
+                                Platform
+                            </sharp>
+
+                            <sharp class='Square  FilePack'>
+                                Lang Pack
+                            </sharp>
+
+                            <div class='arrow  arrow-4'>
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <div class='arrow  arrow-2'>
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <div class='arrow  arrow-1'>
+                                <div class='arrow-img'></div>
+                            </div>
+
+
+                            <sharp class='Cycle Import fragment fade-out' data-fragment-index="1">
+                                Import
+                            </sharp>
+
+                            <div class='arrow  arrow-6'>
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <div class='cross cross-1 fragment fade-out' data-fragment-index="1">
+                                <div class='cross-img'></div>
+                            </div>
+
+                            <sharp class='Cycle Parser fragment' data-fragment-index="2">
+                                Parser
+                            </sharp>
+
+                            <div class='arrow  arrow-7 fragment' data-fragment-index="2">
+                                <div class='arrow-img-double'></div>
+                            </div>
+
+                            <sharp class='Square Server_Parser fragment' data-fragment-index="2">
+                                Server
+                                Parser
+                            </sharp>
+
+                            <div class='arrow  arrow-8 fragment' data-fragment-index="3">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Cycle Edit fragment' data-fragment-index="3">
+                                Edit
+                            </sharp>
+
+                            <div class='arrow  arrow-9 fragment' data-fragment-index="3">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Cycle Improve2 fragment' data-fragment-index="3">
+                                Improve
+                            </sharp>
+
+                            <div class='arrow  arrow-10 fragment' data-fragment-index="4">
+                                <div class='arrow-img'></div>
+                            </div>
+
+                            <sharp class='Square DB String_Content fragment'  data-fragment-index="4">
+                                String Content
+                            </sharp>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>輸出輸入流程完成</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>等等...剛剛誰改了我東西...</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>誰亂加平台跟分類啦...</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>哪個人把英文改的<br>這麼語意不通順</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="none" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>大家都可以編輯修改<br>好像這樣有點糟糕</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage=''>
+                            <div class='PageContent'>
+                                <div class='Title' > 權限 機制 </div>
+                                <div class='Content'>
+                                    <ul style='font-size:40px; line-height:90px;'>
+                                        <li class='autoStepShow'>
+                                            需要有彈性的賦予使用者不同的權限
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            根據使用者去限制動作 跟 取得到的東西
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            隨時變更、隨時生效
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Permission_Role'>
+                            <div class='PageContent'>
+                                <div class='Title' > 權限 : 角色 </div>
+                                <div class='Content'>
+                                    <ul style='font-size:30px; line-height:55px;'>
+                                        <li class='autoStepShow'>
+                                            管理員 Admin
+                                            <div class='Role_Method fragment' data-fragment-index="1">
+                                                String, Classify, Language, Platform, Generate, Member, Setting
+                                            </div>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            員工 Staff
+                                            <div class='Role_Method fragment' data-fragment-index="2">
+                                                String, Classify, Generate, Setting
+                                            </div>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            翻譯 Translator
+                                            <div class='Role_Method fragment' data-fragment-index="3">
+                                                String, Setting
+                                            </div>
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            鎖定 Lock
+                                            <div class='Role_Method fragment' data-fragment-index="4">
+                                                none
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='Permission_Access'>
+                            <div class='PageContent'>
+                                <div class='Title' > 權限 : 存取 </div>
+                                <div class='Content'>
+                                    <ul style='font-size:40px; line-height:75px;'>
+                                        <li class='autoStepShow'>
+                                            賦予單一使用者不同的存取權
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            減少使用者看到雜亂不需要的資訊
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            保護資料避免不相干的人錯誤修改
+                                        </li>
+                                        <li class='autoStepShow fragment' data-fragment-index="1">
+                                            限制 Platform 限制
+                                        </li>
+                                        <li class='autoStepShow fragment' data-fragment-index="1">
+                                            限制 Language 限制
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+
+                <section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='MemberRole'>
+                            <div class='PageContent'>
+                                <div class='Title' >會員與角色</div>
+                                <div class='Content'>
+                                    <ul style='font-size:40px; line-height:80px;'>
+                                        <li class='autoStepShow'>
+                                            Role-based access control ( RBAC )
+                                        </li>
+                                        <li class='autoStepShow'>
+                                            Yii : WebUser, AcceessControl
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                        <div class='ShowBox' showboxpage='MemberRole_Flow'>
+                            <div class='PageContent'>
+                                <div class='Title' >會員與角色 - Flow</div>
+                                <div class='Content'>
+                                </div>
+
+                                <sharp class='Square User' data-fragment-index="1">
+                                    User
+                                </sharp>
+
+                                <sharp class='Cycle WebUser fragment' data-fragment-index="1">
+                                    Web User
+                                </sharp>
+
+
+                                <div class='arrow  arrow-1 fragment' data-fragment-index="1">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Cycle getRole fragment' data-fragment-index="2">
+                                    get Role
+                                </sharp>
+
+                                <div class='arrow  arrow-2 fragment' data-fragment-index="2">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <sharp class='Square DB Role_Permission fragment' data-fragment-index="3">
+                                    Role
+                                    Permission
+                                </sharp>
+
+                                <div class='arrow  arrow-3 fragment' data-fragment-index="3">
+                                    <div class='arrow-img-double'></div>
+                                </div>
+
+                                <div class='arrow  arrow-4 fragment' data-fragment-index="4">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                                <sharp class='Cycle Control_Page fragment' data-fragment-index="4">
+                                    Control (Page)
+                                </sharp>
+
+                                <div class='arrow  arrow-5 fragment' data-fragment-index="5">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+
+                                <sharp class='Cycle Access_control fragment' data-fragment-index="5">
+                                    Access Rules
+                                </sharp>
+
+                                <sharp class='Cycle Action_Method  fragment' data-fragment-index="8">
+                                    Action Method
+                                </sharp>
+
+                                <sharp class='Cycle Action_Error fragment current-visible' data-fragment-index="7">
+                                    Action Error
+                                </sharp>
+
+                                <div class='arrow  arrow-6 fragment ' data-fragment-index="8">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-7 fragment current-visible' data-fragment-index="7">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                 <sharp class='Cycle Action_Method  fragment' data-fragment-index="9">
+                                    Action Method
+                                </sharp>
+
+                                <sharp class='Cycle Action_Error fragment ' data-fragment-index="9">
+                                    Action Error
+                                </sharp>
+
+                                <div class='arrow  arrow-6 fragment ' data-fragment-index="9">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <div class='arrow  arrow-7 fragment ' data-fragment-index="9">
+                                    <div class='arrow-img'></div>
+                                </div>
+
+                                <sharp class='Square Controller fragment' data-fragment-index="10">
+                                    <div class='Controller_name'>Control</div>
+                                </sharp>
+
+
+                                    <div class='AccessRules fragment current-visible'  data-fragment-index="6">
+                                        <pre><code class="php" data-trim contenteditable style="font-size: 18px;">
+    public function accessRules(){
+            return array(
+                array('allow',  // allow all users to perform 'index' and 'view' actions
+                    'actions'=>array('Index','Export','ExportToFile','GetClassify','Import','ParserFile','CheckStingInfo','ImportStingInfo'),
+                    'roles'=>array( Yii::app()->params["Role"]['admin'],
+                                    Yii::app()->params["Role"]['staff']  ),
+                ),
+
+                array('allow',  // allow all users to perform 'index' and 'view' actions
+                    'actions'=>array('Error',),
+                    'users'=>array('*'),
+                ),
+
+                array('deny',  // deny all users
+                    'users'=>array('*'),
+                ),
+            );
+        }
+                                        </code></pre>
+                                    </div>
+
+                                <div class='arrow  arrow-8 fragment ' data-fragment-index="11">
+                                    <div class='arrow-img'></div>
+                                </div>
+                                <sharp class='Square DB MenuList fragment' data-fragment-index="11">
+                                    Menu
+                                    List
+                                </sharp>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='LangFile_DB'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>L i v e <br> <font color='blue'>D e m o</font> <br> T i m e</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='LangFile_DB'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'>Q & A</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage='LangFile_DB'>
+                        <div class='PageContent'>
+                            <div class='AllPageCenter'>
+                                <h2 class='autoTypeWriter'></h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section  data-transition="slide" data-transition-speed="fast" data-state="">
+                    <div class='ShowBox' showboxpage=''>
+                        <div class='PageContent'>
+                            <div class='Title' > </div>
+                            <div class='Content'>
+                                <ul style='font-size:40px; line-height:80px;'>
+                                    <li class='autoStepShow'>
+                                        不同平台的語言檔格式皆不相同
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="lib/js/jquery-1.11.2.min.js"></script>
+        <script src="lib/js/jquery-typewrite.js"></script>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/pageAction.js"></script>
+
+    </body>
+</html>
+
+
+

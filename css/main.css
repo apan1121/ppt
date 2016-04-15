@@ -1,0 +1,3267 @@
+body{
+    background: #222;
+}
+
+.Cycle{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    background: #DDD;
+    border:1px solid #AAA;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+
+    font-size: 30px;
+    position: absolute;
+}
+
+.Square{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width:100px;
+    height:100px;
+    line-height: 100px;
+
+    background: #DDD;
+    border: 1px solid #999;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
+}
+
+.arrow{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+.arrow .arrow-img{
+    width:100%;
+    height:100%;
+    background-image: url("../image/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.arrow .arrow-img-double{
+    width:100%;
+    height:100%;
+    background-image: url("../image/arrow-double.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cross{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.cross .cross-img{
+    width:100%;
+    height:100%;
+    background-image: url("../image/cross.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+.reveal section img {
+  margin: 0px 0px;
+  background: transparent;
+  border: 0px solid #222;
+  box-shadow: none;
+}
+
+
+section > .ShowBox{
+  display: block;
+  background: #FFF;
+  min-height:600px;
+  max-height:900px;
+  height:650px;
+  border:1px solid #000;
+
+  position: relative;
+}
+
+
+.ShowBox > .background{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 650px;
+    width:100%;
+    z-index: -10px;
+}
+
+.ShowBox > .PageContent{
+    position: relative;
+    top:0px;
+    left: 0px;
+    height: 650px;
+    width:100%;
+    z-index: 3;
+    text-align: left;
+}
+
+.ShowBox > .PageContent  .Template_PageCenter{
+    display: table;
+    width:100%;
+    height:100%;
+}
+
+.ShowBox > .PageContent  .Template_PageCenter >div{
+    display: table-row;
+}
+
+.ShowBox > .PageContent  .Template_PageCenter >div>div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.ShowBox > .background > .orng_bar{
+    background: #fe4402;
+    position: absolute;
+    bottom:0px;
+    height:1.7%;
+    width:100%;
+}
+
+.ShowBox > .background > .deep_black_box{
+    background: #332929;
+    position: absolute;
+    bottom:0px;
+    height:7%;
+    width:100%;
+}
+
+.ShowBox > .background > .deep_black_box > .campany_logo_text{
+    position: absolute;
+    /*width:134px;
+    height:36px;*/
+
+    width:93.8px;
+    height:25.2px;
+
+    top:10%;
+    left:2%;
+
+    background-image: url("../image/GoYourLife_Logo_Text.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ShowBox > .background > .deep_black_box > .campany_logo_small{
+    position: absolute;
+    /*width:184px;
+    height:45px;*/
+
+    width:128.8px;
+    height:31.5px;
+
+    top:4%;
+    right:2%;
+
+    background-image: url("../image/GoYourLife_Logo_Small.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ShowBox .PageContent > .Title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size:60px;
+    font-weight: 900;
+
+    top :8%;
+
+
+}
+
+.ShowBox .PageContent > .Content{
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    padding:3% 10%;
+    font-size:45px;
+
+    top :20%;
+
+
+}
+
+
+
+/* START ShowBoxPage = FrontCover */
+.ShowBox[showboxpage='FrontCover'] > .background > .orng_bar{
+    height:2.5%;
+}
+.ShowBox[showboxpage='FrontCover'] > .background > .company_logo{
+    position: absolute;
+    width:256.2px;
+    height:74.2px;
+
+    right:10%;
+    top:24%;
+
+    background-image: url("../image/GoYourLife_Logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ShowBox[showboxpage='FrontCover'] .deep_black_box{
+    background: #332929;
+    position: absolute;
+    bottom:0px;
+    height:35%;
+    width:100%;
+}
+
+.ShowBox[showboxpage='FrontCover'] .deep_black_box > .company_info{
+    position: absolute;
+    top:18%;
+    left:5%;
+}
+
+.ShowBox[showboxpage='FrontCover'] .deep_black_box > .company_info > .company_name{
+    color:#f57300;
+    font-size: 17px;
+    font-family: 華康中圓體;
+    letter-spacing: 1px;
+}
+.ShowBox[showboxpage='FrontCover'] .deep_black_box > .company_info > .company_addr{
+    color:#f5f5f5;
+    padding-top:10px;
+    font-size: 13px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.ShowBox[showboxpage='FrontCover'] .PageContent .ProjectTitle{
+    position: absolute;
+    color:#f55a00;
+    font-weight: 900;
+    top:22%;
+    left:5%;
+    font-size:50px;
+    font-family:Arial Black;
+
+    text-shadow: 1px 1px #444;
+}
+
+.ShowBox[showboxpage='FrontCover'] .PageContent .ProjectSubTitle{
+    position: absolute;
+    color:#3d3d3d;
+    font-family:Arial Black;
+    font-size:32px;
+    font-weight: 600;
+
+    top:35%;
+    left:6%;
+
+}
+
+.ShowBox[showboxpage='FrontCover'] .PageContent .ProjectReporter{
+    position: absolute;
+    text-align: right;
+    color:#FAFAFA;
+    font-family:Arial Black;
+    font-size:32px;
+    letter-spacing: 2px;
+
+    top:72%;
+    right:7%;
+
+}
+
+.ShowBox[showboxpage='FrontCover'] .Press_Space_Bar{
+    position: absolute;
+    display: inline-block;
+
+    bottom:3%;
+    right:3%;
+}
+
+.ShowBox[showboxpage='FrontCover'] .Press_Space_Bar .Press_Space{
+    padding: 10px;
+    background: #AAA;
+    color: #DDD;
+    font-weight: 900;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    border:1px solid #888;
+
+    display: inline-block;
+
+
+      /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=70);
+
+  /* Netscape */
+  -moz-opacity: 0.7;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.7;
+
+  /* Good browsers */
+  opacity: 0.7;
+
+}
+
+
+/*  END  ShowBoxPage = FrontCover */
+
+
+/* START ShowBoxPage = MVC_Intro */
+.ShowBox[showboxpage='MVC_Intro'] .PeoplePic{
+    position: absolute;
+    top:30%;
+    right:0;
+    z-index: 1;
+}
+.ShowBox[showboxpage='MVC_Intro'] .PeoplePic img{
+    height:400px;
+}
+.ShowBox[showboxpage='MVC_Intro'] .PeopleSay{
+    position: absolute;
+    font-size:30px;
+    top:50%;
+    left:10%;
+    text-align: left;
+    width:50%;
+    border:1px solid #CCC;
+    padding:20px;
+    background: #DDD;
+}
+
+.ShowBox[showboxpage='MVC_Intro'] .PARCPic{
+    position: absolute;
+    bottom:30%;
+    right:0;
+    z-index: 1;
+}
+.ShowBox[showboxpage='MVC_Intro'] .PARCPic img{
+    height:120px;
+}
+
+.ShowBox[showboxpage='MVC_Intro'] .MVC_Flow{
+    position: absolute;
+    bottom:10%;
+    right:0px;
+    z-index: -1;
+
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+
+}
+.ShowBox[showboxpage='MVC_Intro'] .MVC_Flow img{
+    width:330px;
+}
+/*  END  ShowBoxPage = MVC_Intro */
+
+
+/* StART  ShowBoxPage = MVC_Flow */
+.ShowBox[showboxpage='MVC_Flow'] .User{
+    width:150px;
+    height:150px;
+    line-height: 150px;
+    top:40%;
+    left:10%;
+    background: #AAF;
+}
+
+.ShowBox[showboxpage='MVC_Flow'] .Control{
+    width:150px;
+    height:150px;
+    line-height: 150px;
+
+    top:40%;
+    left:37%;
+
+    background: #AFA;
+}
+
+.ShowBox[showboxpage='MVC_Flow'] .Model{
+    width:150px;
+    height:150px;
+    line-height: 150px;
+    top:20%;
+    left:65%;
+
+    background: #FAA;
+}
+
+.ShowBox[showboxpage='MVC_Flow'] .View{
+    width:150px;
+    height:150px;
+    line-height: 150px;
+    top:60%;
+    left:65%;
+
+    background: #AFF;
+}
+
+.ShowBox[showboxpage='MVC_Flow'] .DB{
+    width:100px;
+    height:100px;
+    line-height: 100px;
+    top:10%;
+    left:86%;
+
+    background: #FAF;
+}
+
+.ShowBox[showboxpage='MVC_Flow']  .arrow-1{
+    top:48%;
+    left:26.5%;
+}
+
+.ShowBox[showboxpage='MVC_Flow']  .arrow-2{
+    left:54%;
+    top:37%;
+    -moz-transform:rotate(-25deg);
+    -webkit-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+    transform:rotate(-25deg);
+}
+
+.ShowBox[showboxpage='MVC_Flow']  .arrow-3{
+    width:60px;
+    height: 30px;
+    left:80%;
+    top:22%;
+    -moz-transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+    -ms-transform:rotate(30deg);
+    transform:rotate(-30deg);
+}
+
+.ShowBox[showboxpage='MVC_Flow']  .arrow-4{
+    left:54%;
+    top:60%;
+    -moz-transform:rotate(25deg);
+    -webkit-transform:rotate(25deg);
+    -o-transform:rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform:rotate(25deg);
+}
+
+.ShowBox[showboxpage='MVC_Flow']  .arrow-5{
+    left:54%;
+    top:37%;
+    -moz-transform:rotate(155deg);
+    -webkit-transform:rotate(155deg);
+    -o-transform:rotate(155deg);
+    -ms-transform:rotate(155deg);
+    transform:rotate(155deg);
+}
+
+.ShowBox[showboxpage='MVC_Flow']  .arrow-6{
+    left:54%;
+    top:60%;
+    -moz-transform:rotate(205deg);
+    -webkit-transform:rotate(205deg);
+    -o-transform:rotate(205deg);
+    -ms-transform:rotate(205deg);
+    transform:rotate(205deg);
+}
+
+.ShowBox[showboxpage='MVC_Flow']  .arrow-7{
+    top:48%;
+    left:26%;
+
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+
+.ShowBox[showboxpage='MVC_Flow']  .MVC-Box{
+    left:35%;
+    top:18%;
+    width:48%;
+    height:67%;
+    border:1px solid #888;
+    background: #EEE;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+/*  END   ShowBoxPage = MVC_Flow */
+
+/* START  ShowBoxPage = PHP_Intro */
+.ShowBox[showboxpage='PHP_Intro'] .PeoplePic{
+    position: absolute;
+    top:33%;
+    right:0;
+    z-index: 1;
+}
+.ShowBox[showboxpage='PHP_Intro'] .PeoplePic img{
+    height:380px;
+}
+
+.ShowBox[showboxpage='PHP_Intro'] .PHP_Sample_Code{
+    position: absolute;
+    display: inline-block;
+    width: 45%;
+    top:50%;
+    left:5%;
+}
+.ShowBox[showboxpage='PHP_Intro'] .Perl_Sample_Code{
+    position: absolute;
+    display: inline-block;
+    width: 45%;
+
+    top:50%;
+    right:5%;
+}
+/*  END   ShowBoxPage = PHP_Intro */
+
+
+/* START  ShowBoxPage = PHP_Mater_Say */
+.ShowBox[showboxpage='PHP_Mater_Say'] .Say{
+    position: absolute;
+    font-size:35px;
+    top:10%;
+    left:8%;
+    text-align: left;
+    width:65%;
+    border:1px solid #CCC;
+    padding:20px;
+    background: #DDD;
+
+    font-weight: 900;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.ShowBox[showboxpage='PHP_Mater_Say'] .PHP_Master{
+    position: absolute;
+    display: inline-block;
+    right:0%;
+    bottom:4.4%;
+    height: 350px;
+}
+.ShowBox[showboxpage='PHP_Mater_Say'] .PHP_Master img{
+    height:100%;
+}
+/*  END   ShowBoxPage = PHP_Mater_Say */
+
+/* START  ShowBoxPage = PHP_Sort */
+.ShowBox[showboxpage='PHP_Sort'] .SortPic{
+    position: absolute;
+    display: inline-block;
+    top:5%;
+    left:2%;
+}
+/*  END   ShowBoxPage = PHP_Sort */
+
+
+
+/* START  ShowBoxPage = Yii_Flow */
+
+
+
+.ShowBox[showboxpage='Yii_Flow'] .User{
+    position: absolute;
+    display: inline-block;
+    top:45%;
+    left:12%;
+
+    background: #AAF;
+}
+
+
+.ShowBox[showboxpage='Yii_Flow'] .Router{
+    position: absolute;
+    display: inline-block;
+    font-size:20px;
+
+    top:45%;
+    left:30%;
+
+    background: #AFF;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .Control{
+    position: absolute;
+    display: inline-block;
+    font-size:20px;
+
+    top:25%;
+    left:50%;
+
+    background: #FAF;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .Control1{
+    top:45%;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .Control2{
+    top:65%;
+}
+
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-1{
+    top:49%;
+    left:23%;
+    width:7%;
+}
+
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-2{
+    top:37%;
+    left:41%;
+    -moz-transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg);
+    transform:rotate(-30deg);
+    width:10%;
+}
+
+
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-3{
+    top:24%;
+    left:60.5%;
+    -moz-transform:rotate(-25deg);
+    -webkit-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+    transform:rotate(-25deg);
+    width:10%;
+}
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-4{
+    top:35%;
+    left:60.5%;
+    -moz-transform:rotate(25deg);
+    -webkit-transform:rotate(25deg);
+    -o-transform:rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform:rotate(25deg);
+    width:10%;
+}
+
+
+
+
+
+.ShowBox[showboxpage='Yii_Flow'] .Model{
+    position: absolute;
+    display: inline-block;
+    font-size:20px;
+
+    top:16%;
+    left:70%;
+
+    background: #FFA;
+}
+
+
+.ShowBox[showboxpage='Yii_Flow'] .Model1{
+    top:35%;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .Model2{
+    top:54%;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .Model3{
+    top:73%;
+}
+
+
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-5{
+    top:24%;
+    left:60.5%;
+    -moz-transform:rotate(-25deg);
+    -webkit-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+    transform:rotate(-25deg);
+    width:10%;
+}
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-6{
+    top:35%;
+    left:60.5%;
+    -moz-transform:rotate(25deg);
+    -webkit-transform:rotate(25deg);
+    -o-transform:rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform:rotate(25deg);
+    width:10%;
+}
+
+
+
+
+.ShowBox[showboxpage='Yii_Flow'] .View{
+    position: absolute;
+    display: inline-block;
+    font-size:20px;
+
+    top:16%;
+    left:70%;
+
+    background: #AFA;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .View1{
+    top:35%;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .View2{
+    top:54%;
+}
+
+.ShowBox[showboxpage='Yii_Flow'] .View3{
+    top:73%;
+}
+
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-7{
+    top:37%;
+    left:41%;
+    -moz-transform:rotate(150deg);
+    -webkit-transform:rotate(150deg);
+    -o-transform:rotate(150deg);
+    -ms-transform:rotate(150deg);
+    transform:rotate(150deg);
+    width:10%;
+}
+
+.ShowBox[showboxpage='Yii_Flow']  .arrow-8{
+    top:49%;
+    left:23%;
+    width:7%;
+
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+/*  END   ShowBoxPage = Yii_Flow */
+
+
+/* START  ShowBoxPage = Ajax_Manster */
+.ShowBox[showboxpage='Ajax_Manster_Say'] .Say{
+    position: absolute;
+    font-size:50px;
+    top:15%;
+    left:30%;
+    text-align: left;
+    width:60%;
+    border:1px solid #CCC;
+    padding:20px;
+    background: #DDD;
+
+    font-weight: 900;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.ShowBox[showboxpage='Ajax_Manster_Say'] .AJAX_Master{
+    position: absolute;
+    display: inline-block;
+    left:0%;
+    bottom:3.5%;
+    height: 450px;
+}
+.ShowBox[showboxpage='Ajax_Manster_Say'] .AJAX_Master img{
+    height:100%;
+}
+
+.ShowBox[showboxpage='Ajax_Manster_Say'] .Google_APP{
+    position: absolute;
+    display: inline-block;
+    left:40%;
+    bottom:3.5%;
+    height: 350px;
+    z-index: -1;
+
+    opacity:0.6;
+    -moz-opacity:0.6;
+    filter:alpha(opacity=60);
+}
+.ShowBox[showboxpage='Ajax_Manster_Say'] .Google_APP img{
+    height:100%;
+}
+/*  END   ShowBoxPage = Ajax_Manster */
+
+
+
+/* START  ShowBoxPage = AJAX_Flow */
+.ShowBox[showboxpage='AJAX_Flow'] .Page{
+    position: relative;
+    top:30%;
+    left:5%;
+
+    height: 35%;
+    width:20%;
+
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%;
+
+    -webkit-border-top-right-radius: 20%;
+    -moz-border-radius-topright: 20%;
+    border-top-right-radius: 20%;
+}
+
+
+.ShowBox[showboxpage='AJAX_Flow'] .Page .Page-sub{
+    font-size:12px;
+    line-height: 35px;
+
+    top:40%;
+    left:3%;
+
+    height: 30%;
+    width:92%;
+
+    background: #FAF;
+
+
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    border-radius: 0%;
+
+}
+
+
+.ShowBox[showboxpage='AJAX_Flow'] .Page .Page-sub.Page-sub-cover {
+    background: #FFA;
+}
+
+.ShowBox[showboxpage='AJAX_Flow'] .GetDataFunc{
+    width: 150px;
+    height: 150px;
+    line-height: 80px;
+
+    top:20%;
+    left:43%;
+
+    background: #FAA;
+
+}
+
+
+.ShowBox[showboxpage='AJAX_Flow'] .arrow-1{
+    width:15%;
+
+    top:35%;
+    left:27%;
+
+    -moz-transform:rotate(-25deg);
+    -webkit-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+    transform:rotate(-25deg);
+}
+
+.ShowBox[showboxpage='AJAX_Flow'] .XML{
+    top:20%;
+    left:75%;
+
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    border-radius: 0%;
+
+    background: #AFF;
+}
+
+.ShowBox[showboxpage='AJAX_Flow'] .arrow-2{
+    width:15%;
+    top:25%;
+    left:59.5%;
+}
+
+
+.ShowBox[showboxpage='AJAX_Flow'] .SetDOMFunc{
+    width: 150px;
+    height: 150px;
+    line-height: 80px;
+
+    top:60%;
+    left:43%;
+
+    background: #AFA;
+}
+
+.ShowBox[showboxpage='AJAX_Flow'] .arrow-3{
+    width:10%;
+
+    top:48%;
+    left:45.5%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+
+}
+
+.ShowBox[showboxpage='AJAX_Flow'] .arrow-4{
+    width:15%;
+
+    top:60%;
+    left:27%;
+
+    -moz-transform:rotate(205deg);
+    -webkit-transform:rotate(205deg);
+    -o-transform:rotate(205deg);
+    -ms-transform:rotate(205deg);
+    transform:rotate(205deg);
+}
+
+
+.ShowBox[showboxpage='AJAX_Flow'] .MVC{
+    width: 200px;
+    height: 200px;
+
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    border-radius: 3%;
+
+    z-index: -1;
+}
+.ShowBox[showboxpage='AJAX_Flow'] .MVC .showText{
+    display: inline-block;;
+    position: absolute;
+    bottom:0;
+    left:10%;
+}
+
+.ShowBox[showboxpage='AJAX_Flow'] .Control{
+    top:17.8%;
+    left:39%;
+
+    background: #FEE;
+}
+.ShowBox[showboxpage='AJAX_Flow'] .Model{
+    top:17.8%;
+    left:70%;
+
+    background: #EFF;
+}
+.ShowBox[showboxpage='AJAX_Flow'] .View{
+    top:58%;
+    left:39%;
+
+    background: #EFE;
+}
+
+/*  END   ShowBoxPage = AJAX_Flow */
+
+/* START  ShowBoxPage = Backbone.JS_Intro */
+.ShowBox[showboxpage='Backbone.JS_Intro'] .PeoplePic{
+    display: inline-block;
+    position: absolute;
+    height:50%;
+    bottom:4.5%;
+    right:-1%;
+}
+.ShowBox[showboxpage='Backbone.JS_Intro'] .PeoplePic img{
+    height:100%;
+}
+.ShowBox[showboxpage='Backbone.JS_Intro'] .backboneDownload{
+    display: inline-block;
+    position: absolute;
+    height:40%;
+    bottom:5%;
+    left:20%;
+}
+.ShowBox[showboxpage='Backbone.JS_Intro'] .backboneDownload img{
+    height:100%;
+}
+
+/*  END   ShowBoxPage = Backbone.JS_Intro */
+
+
+/* START  ShowBoxPage = Backbone.JS_Flow */
+.ShowBox[showboxpage='Backbone.JS_Flow'] .User{
+    top:40%;
+    left:5%;
+
+    background: #FAF;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-1{
+    top:44%;
+    left:17%;
+    width:25%;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .Init{
+    top:40%;
+    left:43%;
+
+    background: #FFA;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-2{
+    top:34%;
+    left:53%;
+
+    -moz-transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg);
+    transform:rotate(-30deg);
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .GetData{
+    top:20%;
+    left:63%;
+
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+
+    background: #AFA;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-3{
+    top:25%;
+    left:76%;
+
+    width:9%;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .Data{
+    top:20%;
+    left:85%;
+
+    background: #BFD;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-4{
+    top:40.5%;
+    left:66%;
+
+    width:7%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .Collect{
+    top:50%;
+    left:63%;
+
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+
+    background: #AAF;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-5{
+    top:64%;
+    left:56.7%;
+
+    width:8%;
+
+    -moz-transform:rotate(150deg);
+    -webkit-transform:rotate(150deg);
+    -o-transform:rotate(150deg);
+    -ms-transform:rotate(150deg);
+    transform:rotate(150deg);
+}
+
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .SetDOM{
+    top:65%;
+    left:45%;
+
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+
+    background: #AFF;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .BackboneAPP{
+    top:18.5%;
+    left:40%;
+
+    width:38%;
+    height: 69%;
+
+    z-index: -1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    background: #FEE;
+    position: relative;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .BackboneAPP .Name{
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+
+    bottom: -8.5%;
+    left:2%;
+    font-weight: 900;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .Router{
+    top:24.5%;
+    left:25%;
+
+    font-size: 20px;
+    height: 300px;
+    line-height: 300px;
+    width: 6%;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    background: #666;
+    color:#DDD;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-6{
+    top:44%;
+    left:16%;
+    width:9%;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .Init2{
+    top:20%;
+    left:43%;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-7{
+    top:24.5%;
+    left:31.8%;
+    width:11%;
+
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .arrow-8{
+    top:44.2%;
+    left:31.8%;
+    width:11%;
+
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.ShowBox[showboxpage='Backbone.JS_Flow'] .MPV{
+    bottom:15%;
+    left: 8%;
+
+    display: inline-block;
+    position: absolute;
+    font-size:70px;
+    letter-spacing: 20px;
+    font-weight: 900;
+}
+/*  END   ShowBoxPage = Backbone.JS_Flow */
+
+/* START  ShowBoxPage = MVP */
+
+.ShowBox[showboxpage='MVP'] .MVP{
+    position: absolute;
+    text-align: center;
+
+    top:35%;
+    left:23%;
+}
+.ShowBox[showboxpage='MVP'] .MVP img{
+    width:500px;
+}
+/*  END   ShowBoxPage = MVP */
+
+
+
+
+/* START  ShowBoxPage = HtmlScript */
+
+.ShowBox[showboxpage='HtmlScript'] .HtmlScript{
+    position: absolute;
+    text-align: center;
+
+    top:50%;
+    left:3%;
+
+    width:90%;
+}
+.ShowBox[showboxpage='HtmlScript'] .HtmlScript img{
+    width:100%;
+}
+
+.ShowBox[showboxpage='HtmlScript'] .arrow-1{
+    top:65%;
+    right:0%;
+    width:25%;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+
+}
+/*  END   ShowBoxPage = MVP */
+
+/* START  ShowBoxPage = AMD_Intro */
+.ShowBox[showboxpage='AMD_Intro'] .AMD_Flow{
+    top:10%;
+    left:20%;
+
+    position: absolute;
+    display: inline-block;
+
+    background: #FFF;
+
+    width: 60%;
+}
+.ShowBox[showboxpage='AMD_Intro'] .AMD_Flow img{
+    width: 100%;
+}
+/*  END   ShowBoxPage = AMD_Intro */
+
+
+
+/* START  ShowBoxPage = RequireJS_Flow */
+.ShowBox[showboxpage='RequireJS_Flow'] .Page{
+    top:40%;
+    left:10%;
+
+    width:90px;
+    height:100px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background:#FAF;
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .arrow-1{
+    top:45%;
+    left:20%;
+
+    width:20%;
+
+}
+
+
+.ShowBox[showboxpage='RequireJS_Flow'] .RequireJS{
+    top:39%;
+    left:40%;
+
+    width:120px;
+    height:120px;
+    line-height: 120px;
+    font-size: 25px;
+
+    background:#FFA;
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .arrow-2{
+    top:60%;
+    left:42%;
+
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .Config{
+    top:70%;
+    left:41%;
+
+    font-size: 25px;
+
+    background:#AAF;
+}
+
+
+.ShowBox[showboxpage='RequireJS_Flow'] .Code{
+    position: absolute;
+    display: inline-block;
+    top:20%;
+    left:5%;
+
+    width:80%;
+    heigth:90%;
+
+}
+
+
+.ShowBox[showboxpage='RequireJS_Flow'] .jQuery{
+    top:20%;
+    left:70%;
+
+    width:120px;
+    height:120px;
+    line-height: 120px;
+    font-size: 25px;
+
+    background:#FAA;
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .underscore{
+    top:40%;
+    left:80%;
+
+    width:120px;
+    height:120px;
+    line-height: 120px;
+    font-size: 25px;
+
+    background:#AFA;
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .backbone{
+    top:60%;
+    left:70%;
+
+    width:120px;
+    height:120px;
+    line-height: 120px;
+    font-size: 25px;
+
+    background:#AFF;
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .arrow-3{
+    top:55%;
+    left:53%;
+
+    width:18%;
+
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    transform:rotate(30deg);
+
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .Cross{
+    top:52%;
+    left:58%;
+
+    width: 80px;
+    height: 80px;
+}
+
+.ShowBox[showboxpage='RequireJS_Flow'] .arrow-4{
+    top:45%;
+    left:53%;
+
+    width:27%;
+
+
+}
+
+
+/*  END   ShowBoxPage = RequireJS_Flow */
+
+/* START  ShowBoxPage = LangFile_Flow */
+.ShowBox[showboxpage='LangFile_Flow'] .Page{
+    top:45%;
+    left:10%;
+
+    width:90px;
+    height:100px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background:#FAF;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .String{
+    display: inline-block;
+    position: absolute;
+    border:2px solid #AAA;
+    background: #FAA;
+    padding:5px;
+
+    font-size: 25px;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .String1{
+
+    top:57%;
+    left:11%;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .Selector{
+    top:45%;
+    left:33%;
+    background: #AFF;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .File1{
+    top:20%;
+    left:55%;
+    font-size:30px;
+
+    background: #BBF;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .File2{
+    top:45%;
+    left:55%;
+    font-size:30px;
+
+    background: #BBF;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .File3{
+    top:70%;
+    left:55%;
+    font-size:30px;
+
+    background: #BBF;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .String2{
+    top:57%;
+    left:4%;
+}
+
+
+.ShowBox[showboxpage='LangFile_Flow'] .String3{
+    top:33%;
+    left:56.57%;
+}
+.ShowBox[showboxpage='LangFile_Flow'] .String4{
+    top:57%;
+    left:57%;
+}
+.ShowBox[showboxpage='LangFile_Flow'] .String5{
+    top:83%;
+    left:54.3%;
+}
+.ShowBox[showboxpage='LangFile_Flow'] .arrow-1{
+    top:50%;
+    left:20%;
+
+    width: 12.5%;
+}
+.ShowBox[showboxpage='LangFile_Flow'] .lang{
+    top:20%;
+    left: 19%;
+
+    background: #CFC;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .arrow-2{
+    top:37%;
+    left:26%;
+
+    width: 10%;
+
+    -moz-transform:rotate(50deg);
+    -webkit-transform:rotate(50deg);
+    -o-transform:rotate(50deg);
+    -ms-transform:rotate(50deg);
+    transform:rotate(50pxdeg);
+
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .arrow-3{
+    top:36%;
+    left:41%;
+
+    width:15%;
+
+    -moz-transform:rotate(-40deg);
+    -webkit-transform:rotate(-40deg);
+    -o-transform:rotate(-40deg);
+    -ms-transform:rotate(-40deg);
+    transform:rotate(-40pxdeg);
+
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .arrow-4{
+    top:50%;
+    left:44.5%;
+
+    width: 10%;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .selected{
+    background: #FFC;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .Manager{
+    top:45%;
+    left:80%;
+    background: #DFF;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .arrow-5{
+    top:50%;
+    left:66.5%;
+    width: 13%;
+
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180pxdeg);
+
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .arrow-6{
+    top:35%;
+    left:66.5%;
+    width: 13%;
+
+    -moz-transform:rotate(225deg);
+    -webkit-transform:rotate(225deg);
+    -o-transform:rotate(225deg);
+    -ms-transform:rotate(225deg);
+    transform:rotate(225pxdeg);
+
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .arrow-7{
+    top:65%;
+    left:66.5%;
+    width: 13%;
+
+    -moz-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -o-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+    transform:rotate(135pxdeg);
+
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .String6{
+    top:43%;
+    left:86.57%;
+}
+.ShowBox[showboxpage='LangFile_Flow'] .String7{
+    top:57%;
+    left:87%;
+}
+.ShowBox[showboxpage='LangFile_Flow'] .String8{
+    top:67%;
+    left:84.3%;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .engineer{
+    top:18%;
+    left:50%;
+    width:20%;
+    height: 75%;
+
+    z-index: -1;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ShowBox[showboxpage='LangFile_Flow'] .engineer_hand{
+    top:80%;
+    left:20%;
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+}
+
+/*  END   ShowBoxPage = LangFile_Flow */
+
+/* START  ShowBoxPage = LangFile_DB */
+.ShowBox[showboxpage='LangFile_DB'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .Platform{
+
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .Classify{
+    left:30%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .String{
+    left:50%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .String_Content{
+    left:70%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .Lang{
+    left:60%;
+    top:60%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .Member{
+    left:40%;
+    top:60%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .Log{
+    left:80%;
+    top:60%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .arrow-1{
+    top:35%;
+    left:22%;
+    width:8%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .arrow-2{
+    top:35%;
+    left:42%;
+    width:8%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .arrow-3{
+    top:35%;
+    left:62%;
+    width:8%;
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .arrow-4{
+    top:50%;
+    left:65%;
+    width:8%;
+
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45pxdeg);
+}
+
+.ShowBox[showboxpage='LangFile_DB'] .arrow-5{
+    top:50%;
+    left:78%;
+    width:8%;
+
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45pxdeg);
+}
+/*  END   ShowBoxPage = LangFile_DB */
+
+/* START  ShowBoxPage = Lang_Action_Flow */
+.ShowBox[showboxpage='Lang_Action_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .User{
+    top:40%;
+    left:15%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .Lang{
+    top:38%;
+    left:70%;
+}
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .Add{
+    top:30%;
+    left:43%;
+
+    background: #DFD;
+}
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .Update{
+    top:50%;
+    left:43%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .arrow-1{
+    top:40%;
+    left:28%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .arrow-2{
+    top:50%;
+    left:28%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .arrow-3{
+    top:40%;
+    left:55%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Lang_Action_Flow'] .arrow-4{
+    top:50%;
+    left:55%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+/*  END   ShowBoxPage = Lang_Action_Flow */
+
+
+
+/* START  ShowBoxPage = Platform_Action_Flow */
+.ShowBox[showboxpage='Platform_Action_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .User{
+    top:40%;
+    left:15%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .Platform{
+    top:38%;
+    left:70%;
+}
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .Add{
+    top:30%;
+    left:43%;
+
+    background: #DFD;
+}
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .Update{
+    top:50%;
+    left:43%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .arrow-1{
+    top:40%;
+    left:28%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .arrow-2{
+    top:50%;
+    left:28%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .arrow-3{
+    top:40%;
+    left:55%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Platform_Action_Flow'] .arrow-4{
+    top:50%;
+    left:55%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+/*  END   ShowBoxPage = Platform_Action_Flow */
+
+
+
+
+/* START  ShowBoxPage = Classify_Action_Flow */
+.ShowBox[showboxpage='Classify_Action_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .User{
+    top:40%;
+    left:5%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .GetPlatform{
+    top:40%;
+    left:26%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .Classify{
+    top:38%;
+    left:80%;
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .Add{
+    top:30%;
+    left:53%;
+
+    background: #DFD;
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .Update{
+    top:50%;
+    left:53%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .arrow-1{
+    top:40%;
+    left:38%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .arrow-2{
+    top:50%;
+    left:38%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .arrow-3{
+    top:40%;
+    left:65%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .arrow-4{
+    top:50%;
+    left:65%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .arrow-5{
+    top:45%;
+    left:16%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .Platform{
+    top:70%;
+    left:25%;
+
+}
+
+.ShowBox[showboxpage='Classify_Action_Flow'] .arrow-6{
+    top:59%;
+    left:27%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+/*  END   ShowBoxPage = Classify_Action_Flow */
+
+
+
+
+/* START  ShowBoxPage = String_Action_Flow */
+.ShowBox[showboxpage='String_Action_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.ShowBox[showboxpage='String_Action_Flow'] .User{
+    top:10%;
+    left:5%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .GetPlatform{
+    top:40%;
+    left:5%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .GetClassify{
+    top:40%;
+    left:26%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .Classify{
+    top:38%;
+    left:80%;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .Add{
+    top:30%;
+    left:53%;
+
+    background: #DFD;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .Update{
+    top:50%;
+    left:53%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-1{
+    top:40%;
+    left:38%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-2{
+    top:50%;
+    left:38%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-3{
+    top:40%;
+    left:65%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-4{
+    top:50%;
+    left:65%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-5{
+    top:45%;
+    left:16%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .Platform{
+    top:70%;
+    left:4%;
+
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .Classify{
+    top:70%;
+    left:25%;
+
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-6{
+    top:59%;
+    left:27%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-7{
+    top:59%;
+    left:6%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-8{
+    top:29%;
+    left:6%;
+    width:8%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .String{
+    top:38%;
+    left:80%;
+
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .StringContent{
+    top:70%;
+    left:80%;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-9{
+    top:60%;
+    left:82%;
+    width:8%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+
+
+.ShowBox[showboxpage='String_Action_Flow'] .Lang{
+    top:70%;
+    left:60%;
+}
+
+.ShowBox[showboxpage='String_Action_Flow'] .arrow-10{
+    top:75%;
+    left:72%;
+    width:8%;
+
+/*    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);*/
+}
+
+/*  END   ShowBoxPage = String_Action_Flow */
+
+
+
+/* START  ShowBoxPage = Member_Action_Flow */
+.ShowBox[showboxpage='Member_Action_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.ShowBox[showboxpage='Member_Action_Flow'] .User{
+    top:45%;
+    left:5%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .GetPlatform{
+    top:45%;
+    left:26%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .Classify{
+    top:42%;
+    left:80%;
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .Add{
+    top:35%;
+    left:53%;
+
+    background: #DFD;
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .Update{
+    top:55%;
+    left:53%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .arrow-1{
+    top:45%;
+    left:38%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .arrow-2{
+    top:55%;
+    left:38%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .arrow-3{
+    top:45%;
+    left:65%;
+    width:14%;
+
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    transform:rotate(20pxdeg);
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .arrow-4{
+    top:55%;
+    left:65%;
+    width:14%;
+
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .arrow-5{
+    top:50%;
+    left:16%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .Platform{
+    top:70%;
+    left:25%;
+
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .Lang{
+    top:17%;
+    left:25%;
+
+
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .arrow-6{
+    top:62%;
+    left:28%;
+    width:5%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='Member_Action_Flow'] .arrow-7{
+    top:37%;
+    left:28%;
+    width:5%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+/*  END   ShowBoxPage = Member_Action_Flow */
+
+
+
+/* START  ShowBoxPage = Generate_Export_Action_Flow */
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .User{
+    top:10%;
+    left:5%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .GetPlatform{
+    top:40%;
+    left:5%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .GetClassify{
+    top:40%;
+    left:26%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .Classify{
+    top:38%;
+    left:80%;
+}
+
+
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-3{
+    top:45%;
+    left:16%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .Platform{
+    top:70%;
+    left:4%;
+
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .Classify{
+    top:70%;
+    left:25%;
+
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-4{
+    top:59%;
+    left:27%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-2{
+    top:59%;
+    left:6%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-1{
+    top:29%;
+    left:6%;
+    width:8%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-6{
+    top:45%;
+    left:37%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-5{
+    top:59%;
+    left:49%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .Lang{
+    top:70%;
+    left:47%;
+
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .GetLang{
+    top:40%;
+    left:47%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .Export{
+    top:40%;
+    left:70%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-7{
+    top:45%;
+    left:59%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .arrow-8{
+    top:59%;
+    left:71%;
+    width:8%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Export_Action_Flow'] .Zip{
+    top:70%;
+    left:70%;
+
+    background: #FAF;
+}
+
+
+
+
+/*  END   ShowBoxPage = Generate_Export_Action_Flow */
+
+
+
+
+/* START  ShowBoxPage = Generate_Import_Action_Flow */
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .User{
+    top:10%;
+    left:5%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .GetPlatform{
+    top:40%;
+    left:5%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .GetFile{
+    top:40%;
+    left:26%;
+
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .FilePack{
+    top:70%;
+    left:25%;
+    line-height: 60px;
+    font-size: 30px;
+    width: 120px;
+    height: 120px;
+}
+
+
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-3{
+    top:45%;
+    left:16%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .Platform{
+    top:70%;
+    left:4%;
+
+}
+
+
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-4{
+    top:59%;
+    left:27%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-2{
+    top:59%;
+    left:6%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-1{
+    top:29%;
+    left:6%;
+    width:8%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-6{
+    top:45%;
+    left:37%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-5{
+    top:59%;
+    left:49%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .Import{
+    top:40%;
+    left:47%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .cross-1{
+    top:40%;
+    left:47%;
+}
+
+
+/*  END   ShowBoxPage = Generate_Import_Action_Flow */
+
+
+/* START  ShowBoxPage = Generate_Page_Flow */
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .Page{
+    top:20%;
+    left:10%;
+    width:30%;
+    height: 60%;
+
+    position: absolute;
+    display: inline-block;
+    background: #EEE;
+
+    border:1px solid #999;
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .arrow-right{
+    top:40%;
+    left:45%;
+}
+.ShowBox[showboxpage='Generate_Page_Flow'] .arrow-left{
+    top:40%;
+    left:45%;
+
+    -moz-transform:rotate(-180deg);
+    -webkit-transform:rotate(-180deg);
+    -o-transform:rotate(-180deg);
+    -ms-transform:rotate(-180deg);
+    transform:rotate(-180pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .inputFile{
+    top:7%;
+    left:0%;
+    display: inline-block;
+    position: absolute;
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .Parser{
+    top:35%;
+
+    left:60%;
+
+    line-height: 30px;
+
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .Check{
+    top:35%;
+
+    left:60%;
+
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .one_String{
+    top:15%;
+    left:0%;
+    font-size: 15px;
+    padding-bottom:10px;
+    position: absolute;
+    display: inline-block;
+
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .one_String1{
+    top:15%;
+    left:0%;
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .one_String2{
+    top:25%;
+    left:0%;
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .one_String3{
+    top:35%;
+    left:0%;
+}
+
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .one_String_1{
+    left:80%;
+    top:40%;
+    z-index: 5;
+}
+
+.ShowBox[showboxpage='Generate_Page_Flow'] .one_String_2{
+    left:80%;
+    top:45%;
+    z-index: 5;
+}
+/*  END   ShowBoxPage = Generate_Page_Flow */
+
+
+
+
+
+
+
+/* START  ShowBoxPage = Parse_PO_Code */
+
+.ShowBox[showboxpage='Parse_PO_Code'] .SourceC{
+    left:5%;
+    top:20%;
+
+    width: 43%;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.ShowBox[showboxpage='Parse_PO_Code'] .PO{
+    left:50%;
+    top:20%;
+
+    width: 43%;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.ShowBox[showboxpage='Parse_PO_Code'] .PO2,.ShowBox[showboxpage='Parse_PO_Code'] .PO3,.ShowBox[showboxpage='Parse_PO_Code'] .PO4{
+    left:5%;
+    top:20%;
+
+    width: 85%;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.ShowBox[showboxpage='Parse_PO_Code'] .SourceC_Name{
+    left:0%;
+    bottom:-3%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.ShowBox[showboxpage='Parse_PO_Code'] .PO_Name{
+    left:0%;
+    bottom:-3%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+/*  END   ShowBoxPage = Parse_PO_Code */
+
+
+
+
+/* START  ShowBoxPage = Parse_JS_Code */
+
+.ShowBox[showboxpage='Parse_JS_Code'] .JS1{
+    left:5%;
+    top:20%;
+
+    width: 43%;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.ShowBox[showboxpage='Parse_JS_Code'] .JS2{
+    left:50%;
+    top:20%;
+
+    width: 43%;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.ShowBox[showboxpage='Parse_JS_Code'] .JS3{
+    left:5%;
+    top:20%;
+
+    width: 85%;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.ShowBox[showboxpage='Parse_JS_Code'] .SourceC_Name{
+    left:0%;
+    bottom:-3%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.ShowBox[showboxpage='Parse_JS_Code'] .PO_Name{
+    left:0%;
+    bottom:-3%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+/*  END   ShowBoxPage = Parse_JS_Code */
+
+
+/* START  ShowBoxPage = Generate_Import_Action_Flow */
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .Parser{
+    top:40%;
+    left:47%;
+
+    background: #DFD;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .Server_Parser{
+    top:70%;
+    left:46%;
+    line-height: 60px;
+    font-size: 30px;
+    width: 120px;
+    height: 120px;
+
+    background: #AFA;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-7{
+    top:59%;
+    left:48%;
+    width:8%;
+
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .Edit{
+    top:40%;
+    left:68%;
+
+    background: #FDD;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-8{
+    top:45%;
+    left:58%;
+    width:10%;
+
+/*    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20pxdeg);*/
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-9{
+    top:59%;
+    left:69%;
+    width:8%;
+
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .Improve2{
+    top:70%;
+    left:68%;
+
+    background: #FFD;
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .arrow-10{
+    top:60%;
+    left:77%;
+    width:10%;
+
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45pxdeg);
+}
+
+.ShowBox[showboxpage='Generate_Import_Action_Flow'] .String_Content{
+    top:38%;
+    left:85%;
+    line-height: 60px;
+}
+
+/*  END   ShowBoxPage = Generate_Import_Action_Flow */
+
+
+/* START  ShowBoxPage = Permission_Role */
+.ShowBox[showboxpage='Permission_Role'] .Role_Method{
+    color:#888;
+}
+/*  END   ShowBoxPage = Permission_Role */
+
+/* START  ShowBoxPage = MemberRole_Flow */
+
+.ShowBox[showboxpage='MemberRole_Flow'] .DB{
+    top:30%;
+    left:10%;
+    width:110px;
+    height: 120px;
+    line-height: 120px;
+    font-size:30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .User{
+    top:10%;
+    left:5%;
+
+    background: #DDF;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .WebUser{
+    top:40%;
+    left:5%;
+
+    line-height: 50px;
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .getRole{
+    top:70%;
+    left:5%;
+    line-height: 50px;
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-1{
+    left:6%;
+    top:29%;
+    width: 8%;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90pxdeg);
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-2{
+    left:6%;
+    top:60%;
+    width: 8%;
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90pxdeg);
+}
+.ShowBox[showboxpage='MemberRole_Flow'] .Role_Permission{
+    left:28%;
+    top:70%;
+    line-height: 60px;
+    font-size: 23px;
+
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-3{
+    left:16%;
+    top:75%;
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180pxdeg);
+}
+.ShowBox[showboxpage='MemberRole_Flow'] .Control_Page{
+    top:40%;
+    left:45%;
+
+    line-height: 50px;
+    background: #FDF;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-4{
+    left:16%;
+    top:45%;
+    width: 29%;
+/*    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180pxdeg);*/
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .Access_control{
+    top:40%;
+    left:65%;
+
+    line-height: 50px;
+    background: #FDD;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-5{
+    left:56%;
+    top:45%;
+    width: 8.5%;
+/*    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180pxdeg);*/
+}
+
+
+.ShowBox[showboxpage='MemberRole_Flow'] .Action_Error{
+    top:25%;
+    left:85%;
+
+    line-height: 50px;
+
+    background: #FAA;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .Action_Method{
+    top:55%;
+    left:85%;
+
+    line-height: 50px;
+    background: #CCF;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-7{
+    left:76%;
+    top:37%;
+    width: 8.5%;
+    -moz-transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg);
+    transform:rotate(-30pxdeg);
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-6{
+    left:76%;
+    top:52.5%;
+    width: 8.5%;
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    transform:rotate(30pxdeg);
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .Controller{
+    top:20%;
+    left:42%;
+
+    width:55%;
+    height: 55%;
+    z-index: -1;
+
+    background: #FFD;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .Controller .Controller_name{
+    bottom: -5%;
+    left:5%;
+
+    position: absolute;
+    display: inline-block;
+
+    font-size: 30px;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .AccessRules{
+
+    top:15%;
+    width: 100%;
+    height: 60%;
+    z-index: 50;
+    display: inline-block;
+    position: absolute;
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .arrow-8{
+    left:80%;
+    top:70%;
+    width: 8.5%;
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45pxdeg);
+}
+
+.ShowBox[showboxpage='MemberRole_Flow'] .MenuList{
+    left:68%;
+    top:70%;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+/*  END   ShowBoxPage = MemberRole_Flow */
+
+
+
+
+
+
+
+
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
